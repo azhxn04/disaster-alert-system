@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.db
+
+# Local encryption material and encrypted credentials
+dsp_vault/dsp_master.key
+dsp_vault/credentials.enc
+
+# Local environment and Streamlit secrets
+.env
+.env.*
+.streamlit/secrets.toml

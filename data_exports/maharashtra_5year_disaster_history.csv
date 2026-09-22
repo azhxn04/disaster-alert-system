@@ -1,0 +1,1297 @@
+district,year,disaster_type,rainfall_mm,temp_c,seismic_activity,humidity,severity,affected_population,economic_loss_cr
+Mumbai City,2021,Earthquake,199.8,43.9,3.32,68.9,Red,20919,43.22
+Mumbai City,2021,Flood,73.2,41.9,2.74,76.0,Orange,4864,10.04
+Mumbai City,2021,Landslides,383.0,26.9,0.9,41.9,Orange,2861,79.54
+Mumbai City,2021,Heatwave,222.8,28.7,2.79,39.1,Orange,2148,76.58
+Mumbai City,2021,Drought,232.4,40.1,0.98,63.4,Orange,709,150.14
+Mumbai City,2021,Excessive Rainfall,293.0,25.9,0.39,91.7,Orange,4137,241.58
+Mumbai City,2022,Earthquake,171.8,24.2,3.11,58.6,Red,44662,34.9
+Mumbai City,2022,Flood,63.8,42.9,1.24,73.1,Orange,2840,81.37
+Mumbai City,2022,Landslides,268.7,26.3,4.37,80.4,Orange,4526,235.18
+Mumbai City,2022,Heatwave,289.2,43.2,0.49,42.7,Red,32773,16.08
+Mumbai City,2022,Drought,205.5,28.2,3.75,53.2,Orange,2942,73.83
+Mumbai City,2022,Excessive Rainfall,106.4,40.5,0.43,94.1,Orange,1394,194.2
+Mumbai City,2023,Earthquake,52.2,40.8,3.21,77.4,Red,15183,193.96
+Mumbai City,2023,Flood,193.4,24.7,3.9,70.5,Orange,786,86.07
+Mumbai City,2023,Landslides,174.4,29.5,3.31,71.4,Orange,2624,222.37
+Mumbai City,2023,Heatwave,97.8,38.4,3.45,66.5,Orange,2722,193.89
+Mumbai City,2023,Drought,259.1,31.8,0.21,37.0,Orange,3363,12.7
+Mumbai City,2023,Excessive Rainfall,175.7,33.7,4.09,46.2,Orange,3899,105.54
+Mumbai City,2024,Earthquake,141.5,23.8,1.37,40.5,Yellow,4136,9.33
+Mumbai City,2024,Flood,303.4,42.0,3.64,42.1,Red,47753,223.68
+Mumbai City,2024,Landslides,373.0,42.6,1.5,37.2,Orange,2421,60.84
+Mumbai City,2024,Heatwave,377.2,41.8,0.13,63.2,Red,25547,107.27
+Mumbai City,2024,Drought,97.9,29.8,4.25,51.0,Orange,3663,132.1
+Mumbai City,2024,Excessive Rainfall,195.5,44.4,4.33,46.4,Orange,1853,126.83
+Mumbai City,2025,Earthquake,163.9,22.8,2.78,62.7,Orange,1753,17.61
+Mumbai City,2025,Flood,413.3,27.5,0.74,61.8,Red,26943,246.48
+Mumbai City,2025,Landslides,318.9,39.5,1.15,77.3,Orange,3345,95.11
+Mumbai City,2025,Heatwave,303.4,34.3,0.5,84.3,Orange,1339,83.59
+Mumbai City,2025,Drought,66.3,35.6,3.08,31.1,Orange,1519,130.46
+Mumbai City,2025,Excessive Rainfall,308.1,26.0,3.14,55.1,Orange,1118,234.5
+Mumbai City,2026,Earthquake,186.4,24.6,4.17,87.0,Red,56198,68.2
+Mumbai City,2026,Flood,376.9,34.8,2.43,45.7,Red,72805,27.81
+Mumbai City,2026,Landslides,410.2,36.6,1.59,52.7,Orange,4536,182.86
+Mumbai City,2026,Heatwave,404.8,39.9,2.92,35.5,Orange,4543,44.6
+Mumbai City,2026,Drought,292.6,22.2,0.55,73.1,Orange,1223,6.24
+Mumbai City,2026,Excessive Rainfall,269.5,37.9,2.97,44.6,Orange,1567,179.48
+Mumbai Suburban,2021,Earthquake,180.2,39.2,2.96,85.2,Orange,3057,166.12
+Mumbai Suburban,2021,Flood,87.5,30.5,1.27,45.9,Yellow,2268,9.74
+Mumbai Suburban,2021,Landslides,406.8,36.5,3.6,62.7,Orange,2716,146.34
+Mumbai Suburban,2021,Heatwave,128.1,38.6,1.34,31.6,Orange,1296,163.14
+Mumbai Suburban,2021,Drought,426.2,43.9,4.13,54.1,Orange,4677,8.79
+Mumbai Suburban,2021,Excessive Rainfall,221.3,44.2,4.34,85.4,Orange,2232,77.14
+Mumbai Suburban,2022,Earthquake,390.5,29.3,0.85,66.2,Orange,3632,234.36
+Mumbai Suburban,2022,Flood,278.0,24.2,2.81,94.4,Orange,2832,39.32
+Mumbai Suburban,2022,Landslides,400.9,39.0,3.17,75.7,Orange,1821,93.08
+Mumbai Suburban,2022,Heatwave,373.7,40.6,3.92,89.4,Red,45106,130.28
+Mumbai Suburban,2022,Drought,369.3,36.9,3.19,81.7,Orange,2020,223.05
+Mumbai Suburban,2022,Excessive Rainfall,200.2,24.2,2.64,32.3,Orange,2941,119.07
+Mumbai Suburban,2023,Earthquake,164.6,35.6,0.23,32.4,Orange,2120,206.54
+Mumbai Suburban,2023,Flood,100.8,34.0,3.49,44.0,Orange,884,157.61
+Mumbai Suburban,2023,Landslides,70.7,34.2,2.48,71.4,Orange,4891,182.89
+Mumbai Suburban,2023,Heatwave,256.5,29.4,3.6,47.6,Orange,853,112.55
+Mumbai Suburban,2023,Drought,60.1,44.1,3.78,75.2,Orange,1279,105.19
+Mumbai Suburban,2023,Excessive Rainfall,112.6,27.8,2.52,76.4,Orange,1759,166.75
+Mumbai Suburban,2024,Earthquake,431.9,39.0,2.54,69.8,Orange,1614,107.8
+Mumbai Suburban,2024,Flood,192.4,39.4,0.16,37.5,Orange,683,16.27
+Mumbai Suburban,2024,Landslides,392.2,38.2,2.19,36.4,Orange,2630,125.45
+Mumbai Suburban,2024,Heatwave,119.3,32.0,1.85,70.0,Yellow,703,6.53
+Mumbai Suburban,2024,Drought,199.8,36.4,2.31,85.7,Orange,1233,166.38
+Mumbai Suburban,2024,Excessive Rainfall,78.2,36.8,0.22,68.1,Orange,3089,235.36
+Mumbai Suburban,2025,Earthquake,205.3,36.8,2.12,65.5,Orange,2237,235.66
+Mumbai Suburban,2025,Flood,434.5,42.8,0.96,34.5,Red,11275,29.69
+Mumbai Suburban,2025,Landslides,87.8,37.7,0.41,50.7,Orange,604,211.99
+Mumbai Suburban,2025,Heatwave,375.8,28.5,0.62,75.3,Orange,4448,159.09
+Mumbai Suburban,2025,Drought,344.0,40.5,1.34,41.5,Orange,4130,188.9
+Mumbai Suburban,2025,Excessive Rainfall,446.2,31.5,1.74,80.5,Orange,4688,88.5
+Mumbai Suburban,2026,Earthquake,393.4,31.9,3.4,79.0,Red,73178,30.27
+Mumbai Suburban,2026,Flood,252.1,41.0,1.51,88.2,Orange,548,100.35
+Mumbai Suburban,2026,Landslides,412.2,24.1,1.5,91.8,Orange,3080,237.9
+Mumbai Suburban,2026,Heatwave,302.7,32.3,1.39,51.4,Orange,3885,169.77
+Mumbai Suburban,2026,Drought,366.6,40.2,0.5,62.1,Orange,2972,19.1
+Mumbai Suburban,2026,Excessive Rainfall,226.6,42.4,1.64,37.6,Orange,3926,40.03
+Thane,2021,Earthquake,297.3,24.3,0.47,75.6,Orange,4198,22.83
+Thane,2021,Flood,332.5,23.9,0.47,94.1,Red,35944,96.7
+Thane,2021,Landslides,375.1,43.8,4.44,79.0,Orange,875,97.18
+Thane,2021,Heatwave,360.9,34.8,1.97,88.9,Orange,2716,32.24
+Thane,2021,Drought,54.5,32.8,0.35,37.7,Orange,3421,33.79
+Thane,2021,Excessive Rainfall,348.4,35.4,4.33,54.4,Orange,4408,75.0
+Thane,2022,Earthquake,139.4,44.2,0.15,93.0,Orange,4510,15.57
+Thane,2022,Flood,261.1,44.8,0.42,66.0,Orange,2853,242.48
+Thane,2022,Landslides,301.8,38.0,2.1,70.8,Orange,4555,148.16
+Thane,2022,Heatwave,68.2,28.5,4.28,87.9,Orange,3290,116.64
+Thane,2022,Drought,161.0,26.3,2.14,53.0,Orange,849,148.0
+Thane,2022,Excessive Rainfall,439.8,44.7,3.17,64.8,Orange,4162,80.83
+Thane,2023,Earthquake,323.9,25.7,4.11,83.5,Red,60800,237.7
+Thane,2023,Flood,295.4,31.6,4.2,86.3,Orange,618,16.08
+Thane,2023,Landslides,200.6,40.6,4.44,39.8,Orange,2214,150.56
+Thane,2023,Heatwave,438.0,41.4,3.79,60.5,Red,29138,106.63
+Thane,2023,Drought,72.6,41.9,3.68,95.0,Orange,2999,249.18
+Thane,2023,Excessive Rainfall,357.6,43.7,3.84,46.1,Orange,1081,115.38
+Thane,2024,Earthquake,431.6,35.9,1.11,73.7,Orange,2111,156.44
+Thane,2024,Flood,95.4,37.4,2.39,80.2,Orange,4334,132.44
+Thane,2024,Landslides,270.8,34.9,3.96,56.2,Orange,629,37.83
+Thane,2024,Heatwave,352.1,36.3,3.2,43.8,Orange,565,38.41
+Thane,2024,Drought,190.2,35.6,1.83,58.4,Orange,2067,226.52
+Thane,2024,Excessive Rainfall,255.6,40.0,1.84,70.4,Orange,4772,216.28
+Thane,2025,Earthquake,108.8,43.3,2.27,46.8,Orange,4910,117.49
+Thane,2025,Flood,247.0,29.6,2.89,45.6,Orange,1079,23.59
+Thane,2025,Landslides,101.2,25.5,0.71,71.7,Yellow,2055,2.23
+Thane,2025,Heatwave,408.7,32.9,3.04,41.2,Orange,683,52.11
+Thane,2025,Drought,117.6,28.4,0.88,35.8,Yellow,2573,1.65
+Thane,2025,Excessive Rainfall,132.5,30.4,2.32,74.9,Orange,4097,14.63
+Thane,2026,Earthquake,301.2,23.9,3.94,89.9,Red,29381,19.96
+Thane,2026,Flood,372.5,39.2,0.91,43.6,Red,43916,95.77
+Thane,2026,Landslides,297.3,30.5,2.14,78.6,Orange,1635,13.99
+Thane,2026,Heatwave,335.3,42.6,2.35,64.6,Red,41318,31.26
+Thane,2026,Drought,263.0,27.6,1.28,54.5,Orange,1949,9.92
+Thane,2026,Excessive Rainfall,134.6,29.5,0.63,87.9,Yellow,3555,6.14
+Palghar,2021,Earthquake,365.7,33.5,0.48,64.9,Orange,3854,148.78
+Palghar,2021,Flood,222.7,24.9,1.35,53.6,Orange,3068,163.25
+Palghar,2021,Landslides,192.4,44.7,2.77,45.4,Orange,1187,29.94
+Palghar,2021,Heatwave,148.4,25.7,0.92,48.5,Yellow,4535,2.15
+Palghar,2021,Drought,82.1,34.1,1.91,93.9,Orange,2290,32.45
+Palghar,2021,Excessive Rainfall,437.8,41.9,3.7,46.8,Orange,3508,46.87
+Palghar,2022,Earthquake,421.8,34.8,2.62,48.2,Orange,1341,193.53
+Palghar,2022,Flood,179.5,31.8,2.33,45.8,Orange,3247,33.14
+Palghar,2022,Landslides,165.5,35.4,0.78,61.3,Orange,733,135.48
+Palghar,2022,Heatwave,184.6,25.1,0.38,94.3,Yellow,4144,3.56
+Palghar,2022,Drought,151.9,37.7,3.45,68.7,Orange,2353,120.54
+Palghar,2022,Excessive Rainfall,189.5,43.4,3.75,92.7,Orange,3788,35.45
+Palghar,2023,Earthquake,425.3,26.2,0.39,78.2,Orange,4288,145.75
+Palghar,2023,Flood,105.9,40.3,0.99,40.6,Orange,4165,45.25
+Palghar,2023,Landslides,316.1,34.0,1.68,87.0,Orange,4174,101.15
+Palghar,2023,Heatwave,225.7,30.7,2.14,49.6,Orange,2762,188.16
+Palghar,2023,Drought,142.9,42.7,1.79,65.3,Orange,3309,227.09
+Palghar,2023,Excessive Rainfall,96.8,43.6,2.86,51.8,Orange,4073,39.12
+Palghar,2024,Earthquake,298.0,34.3,4.03,81.3,Red,31820,42.16
+Palghar,2024,Flood,149.4,39.1,0.25,67.0,Orange,4445,191.8
+Palghar,2024,Landslides,186.8,40.9,0.59,85.0,Orange,2287,36.23
+Palghar,2024,Heatwave,368.9,25.4,1.11,76.9,Orange,3385,181.41
+Palghar,2024,Drought,327.6,34.5,1.21,52.5,Orange,4588,49.49
+Palghar,2024,Excessive Rainfall,283.4,31.2,2.13,91.6,Orange,3138,42.57
+Palghar,2025,Earthquake,252.4,36.1,0.18,86.7,Orange,3043,233.37
+Palghar,2025,Flood,328.7,43.2,3.21,39.9,Red,52470,146.19
+Palghar,2025,Landslides,219.7,38.9,4.21,90.2,Orange,1009,115.46
+Palghar,2025,Heatwave,443.9,41.3,0.65,89.9,Red,46318,218.12
+Palghar,2025,Drought,286.5,31.2,0.34,51.8,Orange,520,201.7
+Palghar,2025,Excessive Rainfall,183.4,31.2,2.46,89.8,Orange,2061,89.85
+Palghar,2026,Earthquake,345.0,32.4,1.09,59.4,Orange,1293,39.51
+Palghar,2026,Flood,249.3,31.6,4.13,53.6,Orange,3345,147.24
+Palghar,2026,Landslides,55.2,37.3,0.88,92.5,Orange,2365,41.42
+Palghar,2026,Heatwave,84.1,44.9,2.31,68.7,Red,62497,21.43
+Palghar,2026,Drought,134.0,42.7,1.0,42.4,Orange,2624,13.95
+Palghar,2026,Excessive Rainfall,275.9,23.5,3.51,59.5,Orange,2483,133.48
+Raigad,2021,Earthquake,210.3,34.9,0.78,41.8,Orange,4757,216.14
+Raigad,2021,Flood,199.3,28.2,2.93,56.6,Orange,1202,11.22
+Raigad,2021,Landslides,336.4,37.2,0.22,44.4,Orange,3523,61.61
+Raigad,2021,Heatwave,57.9,24.4,3.62,41.6,Orange,1571,164.92
+Raigad,2021,Drought,89.8,27.6,3.28,85.6,Orange,2287,208.4
+Raigad,2021,Excessive Rainfall,317.2,26.7,1.39,88.3,Orange,884,8.19
+Raigad,2022,Earthquake,133.2,22.6,0.9,67.9,Yellow,4517,4.5
+Raigad,2022,Flood,377.0,29.9,1.24,54.7,Red,28764,149.62
+Raigad,2022,Landslides,299.7,31.4,2.53,58.3,Orange,4768,77.14
+Raigad,2022,Heatwave,355.4,25.2,3.92,61.7,Orange,4099,224.17
+Raigad,2022,Drought,220.1,22.5,1.28,65.2,Orange,1660,160.2
+Raigad,2022,Excessive Rainfall,105.7,41.2,4.43,64.2,Orange,1725,47.06
+Raigad,2023,Earthquake,57.4,43.0,0.62,67.5,Orange,2993,72.14
+Raigad,2023,Flood,310.6,41.1,1.01,30.7,Red,73001,38.54
+Raigad,2023,Landslides,399.6,35.7,2.74,73.2,Orange,4614,47.97
+Raigad,2023,Heatwave,217.5,30.8,2.38,33.1,Orange,3821,45.74
+Raigad,2023,Drought,83.1,35.9,1.18,55.3,Orange,2100,75.73
+Raigad,2023,Excessive Rainfall,337.6,28.8,2.59,60.9,Orange,4715,167.6
+Raigad,2024,Earthquake,343.0,26.9,0.24,47.0,Orange,731,150.79
+Raigad,2024,Flood,248.5,35.7,1.57,80.1,Orange,838,31.12
+Raigad,2024,Landslides,341.3,33.4,3.13,58.3,Orange,4185,65.37
+Raigad,2024,Heatwave,369.8,38.0,1.3,68.4,Orange,912,93.44
+Raigad,2024,Drought,416.9,25.1,4.28,59.0,Orange,2938,50.36
+Raigad,2024,Excessive Rainfall,399.2,38.8,3.65,72.8,Orange,4321,174.61
+Raigad,2025,Earthquake,149.9,33.3,1.07,94.2,Yellow,677,9.47
+Raigad,2025,Flood,332.2,43.3,0.89,66.9,Red,12376,229.29
+Raigad,2025,Landslides,329.0,28.8,4.17,93.1,Orange,2633,236.35
+Raigad,2025,Heatwave,394.8,41.4,1.5,83.9,Red,51738,14.07
+Raigad,2025,Drought,142.0,24.8,0.44,75.3,Yellow,3761,3.73
+Raigad,2025,Excessive Rainfall,76.1,29.3,2.47,81.4,Orange,3316,83.09
+Raigad,2026,Earthquake,404.4,36.2,1.13,31.6,Orange,595,218.17
+Raigad,2026,Flood,399.9,34.2,4.23,81.9,Red,34549,249.49
+Raigad,2026,Landslides,356.9,31.2,2.21,70.8,Orange,4928,219.05
+Raigad,2026,Heatwave,357.3,31.6,1.95,77.9,Orange,997,63.5
+Raigad,2026,Drought,191.8,28.6,1.4,45.2,Yellow,580,0.9
+Raigad,2026,Excessive Rainfall,445.1,31.8,1.79,74.2,Orange,4774,58.47
+Ratnagiri,2021,Earthquake,364.5,24.1,1.94,87.1,Orange,2603,236.46
+Ratnagiri,2021,Flood,295.4,25.8,4.46,45.1,Orange,3423,235.97
+Ratnagiri,2021,Landslides,293.1,33.8,1.11,41.5,Orange,1338,59.02
+Ratnagiri,2021,Heatwave,361.8,30.1,0.35,93.0,Orange,4674,221.53
+Ratnagiri,2021,Drought,448.0,26.0,1.84,79.3,Orange,1192,175.53
+Ratnagiri,2021,Excessive Rainfall,376.3,27.2,1.08,64.9,Orange,3110,150.27
+Ratnagiri,2022,Earthquake,86.6,42.2,1.27,38.4,Orange,4800,222.74
+Ratnagiri,2022,Flood,394.9,40.6,2.98,65.8,Red,38591,26.31
+Ratnagiri,2022,Landslides,199.1,28.0,3.28,62.2,Orange,1490,24.86
+Ratnagiri,2022,Heatwave,323.3,23.8,3.85,62.2,Orange,3165,122.74
+Ratnagiri,2022,Drought,379.9,30.0,3.08,66.8,Orange,4453,70.42
+Ratnagiri,2022,Excessive Rainfall,369.0,37.1,3.84,86.4,Orange,4266,178.55
+Ratnagiri,2023,Earthquake,329.0,37.6,2.82,78.9,Orange,4463,43.86
+Ratnagiri,2023,Flood,398.7,22.7,3.73,38.4,Red,62045,87.1
+Ratnagiri,2023,Landslides,114.3,40.8,3.76,63.0,Orange,1791,6.56
+Ratnagiri,2023,Heatwave,296.8,44.6,2.88,46.9,Red,47798,160.33
+Ratnagiri,2023,Drought,361.9,24.5,3.45,65.2,Orange,2038,240.93
+Ratnagiri,2023,Excessive Rainfall,303.0,43.4,0.55,90.9,Orange,805,173.53
+Ratnagiri,2024,Earthquake,170.4,38.3,0.4,67.8,Orange,3294,89.74
+Ratnagiri,2024,Flood,68.3,42.0,4.38,93.0,Orange,1085,188.66
+Ratnagiri,2024,Landslides,353.3,22.6,0.2,51.0,Orange,3966,124.72
+Ratnagiri,2024,Heatwave,323.3,32.3,1.3,94.8,Orange,2531,109.41
+Ratnagiri,2024,Drought,115.4,40.3,3.15,44.4,Orange,3562,25.18
+Ratnagiri,2024,Excessive Rainfall,311.8,28.3,4.28,39.8,Orange,4746,110.92
+Ratnagiri,2025,Earthquake,217.9,36.7,1.85,47.8,Orange,2342,246.07
+Ratnagiri,2025,Flood,407.6,27.3,1.04,32.0,Red,35796,164.66
+Ratnagiri,2025,Landslides,395.7,32.9,4.36,42.1,Orange,3994,217.81
+Ratnagiri,2025,Heatwave,358.4,41.4,3.45,70.7,Red,12276,37.15
+Ratnagiri,2025,Drought,418.3,36.2,3.6,61.3,Orange,1063,33.74
+Ratnagiri,2025,Excessive Rainfall,324.2,31.9,0.98,62.0,Orange,3118,20.73
+Ratnagiri,2026,Earthquake,157.6,40.3,1.47,59.6,Orange,826,7.85
+Ratnagiri,2026,Flood,207.0,33.0,2.74,49.0,Orange,4370,175.27
+Ratnagiri,2026,Landslides,361.9,22.9,2.21,36.8,Orange,4939,64.3
+Ratnagiri,2026,Heatwave,107.0,33.5,2.82,75.7,Orange,543,142.11
+Ratnagiri,2026,Drought,180.6,33.9,0.49,52.8,Yellow,853,0.82
+Ratnagiri,2026,Excessive Rainfall,208.8,25.1,2.6,74.8,Orange,1400,201.14
+Sindhudurg,2021,Earthquake,117.0,24.4,2.9,75.9,Orange,4712,12.74
+Sindhudurg,2021,Flood,70.8,34.4,3.22,86.6,Orange,4107,179.95
+Sindhudurg,2021,Landslides,185.8,40.7,0.45,88.2,Orange,4177,139.16
+Sindhudurg,2021,Heatwave,230.9,36.8,2.42,77.6,Orange,771,25.0
+Sindhudurg,2021,Drought,148.8,25.7,3.94,44.2,Orange,2016,244.09
+Sindhudurg,2021,Excessive Rainfall,122.8,40.2,3.0,62.4,Orange,3736,141.06
+Sindhudurg,2022,Earthquake,141.4,44.9,4.39,72.3,Red,57615,53.89
+Sindhudurg,2022,Flood,78.9,22.7,1.23,60.1,Yellow,3772,8.75
+Sindhudurg,2022,Landslides,347.1,31.8,1.62,54.1,Orange,680,246.97
+Sindhudurg,2022,Heatwave,396.8,35.3,2.03,77.1,Orange,4430,124.23
+Sindhudurg,2022,Drought,410.3,31.7,1.32,68.5,Orange,1447,228.53
+Sindhudurg,2022,Excessive Rainfall,299.2,36.5,3.33,38.6,Orange,4590,180.38
+Sindhudurg,2023,Earthquake,121.9,27.5,4.37,41.8,Red,44459,214.32
+Sindhudurg,2023,Flood,148.9,42.0,2.06,63.5,Orange,3168,93.01
+Sindhudurg,2023,Landslides,115.4,31.0,4.37,46.8,Orange,1963,165.9
+Sindhudurg,2023,Heatwave,359.4,25.0,4.37,59.5,Orange,830,62.83
+Sindhudurg,2023,Drought,117.9,34.0,1.58,83.9,Yellow,1619,4.59
+Sindhudurg,2023,Excessive Rainfall,296.9,38.3,0.83,40.9,Orange,3813,13.98
+Sindhudurg,2024,Earthquake,315.5,32.9,3.81,82.4,Red,70778,148.41
+Sindhudurg,2024,Flood,132.3,24.6,1.29,33.7,Yellow,4714,5.55
+Sindhudurg,2024,Landslides,65.7,24.8,2.09,90.7,Orange,2782,82.46
+Sindhudurg,2024,Heatwave,66.6,25.4,4.44,92.7,Orange,4783,6.21
+Sindhudurg,2024,Drought,305.6,42.0,2.1,63.5,Orange,3500,124.77
+Sindhudurg,2024,Excessive Rainfall,105.9,22.7,1.45,75.8,Yellow,3530,2.42
+Sindhudurg,2025,Earthquake,438.0,24.2,3.06,58.8,Red,22400,217.69
+Sindhudurg,2025,Flood,327.1,41.3,4.26,74.4,Red,53249,126.81
+Sindhudurg,2025,Landslides,397.6,35.1,0.23,90.5,Orange,3544,173.93
+Sindhudurg,2025,Heatwave,136.3,37.2,1.83,72.3,Orange,3460,31.12
+Sindhudurg,2025,Drought,449.8,23.1,4.4,56.4,Orange,4020,218.33
+Sindhudurg,2025,Excessive Rainfall,276.8,39.0,3.97,56.3,Orange,3504,85.12
+Sindhudurg,2026,Earthquake,373.1,39.5,3.61,58.3,Red,18414,205.37
+Sindhudurg,2026,Flood,267.8,22.1,1.53,53.8,Orange,3629,102.06
+Sindhudurg,2026,Landslides,205.4,32.3,1.15,54.3,Orange,829,60.68
+Sindhudurg,2026,Heatwave,291.4,37.4,2.83,60.1,Orange,4385,98.05
+Sindhudurg,2026,Drought,257.6,33.0,0.21,52.2,Orange,2294,98.15
+Sindhudurg,2026,Excessive Rainfall,282.1,34.3,2.77,79.7,Orange,3731,204.18
+Pune,2021,Earthquake,432.2,22.4,0.96,30.5,Orange,4541,163.63
+Pune,2021,Flood,147.4,43.3,0.37,90.7,Orange,956,91.15
+Pune,2021,Landslides,244.3,27.9,1.35,50.0,Orange,2926,201.74
+Pune,2021,Heatwave,174.5,36.0,3.25,47.7,Orange,1048,106.32
+Pune,2021,Drought,122.5,37.7,0.9,64.1,Orange,980,178.72
+Pune,2021,Excessive Rainfall,276.9,27.9,4.34,61.4,Orange,2976,202.47
+Pune,2022,Earthquake,67.4,36.6,4.29,69.1,Red,71894,205.7
+Pune,2022,Flood,141.2,26.9,2.79,56.7,Orange,4550,210.77
+Pune,2022,Landslides,191.4,27.4,3.53,47.9,Orange,2406,206.54
+Pune,2022,Heatwave,317.0,24.2,2.84,59.4,Orange,1256,148.72
+Pune,2022,Drought,344.7,41.8,1.05,36.2,Orange,3388,10.79
+Pune,2022,Excessive Rainfall,292.8,34.6,1.12,55.4,Orange,2735,150.65
+Pune,2023,Earthquake,445.1,25.1,3.16,56.3,Red,60231,109.91
+Pune,2023,Flood,327.0,44.8,0.66,36.8,Red,50487,182.46
+Pune,2023,Landslides,159.7,23.8,0.48,88.1,Yellow,1955,2.32
+Pune,2023,Heatwave,140.7,30.2,0.41,63.7,Yellow,4101,1.14
+Pune,2023,Drought,143.5,34.4,3.97,72.3,Orange,1959,135.57
+Pune,2023,Excessive Rainfall,183.2,37.4,4.47,73.0,Orange,3787,141.66
+Pune,2024,Earthquake,236.1,23.4,2.57,92.2,Orange,3605,47.95
+Pune,2024,Flood,130.4,34.3,0.53,59.3,Yellow,2064,7.68
+Pune,2024,Landslides,316.0,40.3,4.18,45.3,Orange,1185,102.83
+Pune,2024,Heatwave,447.0,43.3,2.48,84.7,Red,53650,132.63
+Pune,2024,Drought,85.6,39.4,0.66,83.7,Orange,3689,196.6
+Pune,2024,Excessive Rainfall,64.5,29.0,1.26,53.4,Yellow,4716,1.33
+Pune,2025,Earthquake,271.5,29.0,1.85,59.1,Orange,2820,152.15
+Pune,2025,Flood,417.8,33.4,4.47,85.3,Red,75141,56.09
+Pune,2025,Landslides,96.5,40.8,1.77,87.1,Orange,4126,217.67
+Pune,2025,Heatwave,366.0,29.0,0.46,56.2,Orange,3627,47.51
+Pune,2025,Drought,188.4,44.4,2.92,83.5,Orange,4379,37.47
+Pune,2025,Excessive Rainfall,419.1,33.2,2.77,79.7,Orange,2761,47.84
+Pune,2026,Earthquake,209.5,25.4,1.72,34.4,Orange,1108,11.32
+Pune,2026,Flood,435.2,34.6,4.35,58.1,Red,45429,81.39
+Pune,2026,Landslides,225.8,24.4,2.92,44.0,Orange,3425,156.8
+Pune,2026,Heatwave,110.8,23.4,3.54,59.9,Orange,4976,19.25
+Pune,2026,Drought,73.1,38.0,4.43,45.5,Orange,1046,39.85
+Pune,2026,Excessive Rainfall,171.3,24.3,3.15,34.0,Orange,4985,129.81
+Satara,2021,Earthquake,375.6,36.2,1.45,70.6,Orange,2417,134.13
+Satara,2021,Flood,102.3,42.4,2.08,42.7,Orange,2363,95.1
+Satara,2021,Landslides,381.0,38.9,3.48,30.7,Orange,2666,106.96
+Satara,2021,Heatwave,57.7,28.0,3.45,38.9,Orange,1468,136.15
+Satara,2021,Drought,54.8,27.5,4.39,82.1,Orange,2695,240.1
+Satara,2021,Excessive Rainfall,93.9,34.6,2.1,84.9,Orange,2697,29.03
+Satara,2022,Earthquake,110.0,29.5,3.34,60.9,Red,37613,97.09
+Satara,2022,Flood,233.8,40.1,4.03,92.1,Orange,1919,197.79
+Satara,2022,Landslides,325.3,32.1,1.22,84.7,Orange,4557,14.41
+Satara,2022,Heatwave,234.6,36.7,3.0,88.2,Orange,3262,160.98
+Satara,2022,Drought,76.7,33.9,0.76,77.9,Orange,3561,130.49
+Satara,2022,Excessive Rainfall,66.7,24.0,3.25,34.7,Orange,554,22.46
+Satara,2023,Earthquake,432.6,39.0,1.65,49.3,Orange,3985,90.68
+Satara,2023,Flood,314.5,26.3,0.87,36.4,Red,63506,166.77
+Satara,2023,Landslides,156.0,22.5,0.46,92.9,Yellow,3961,3.31
+Satara,2023,Heatwave,299.9,30.8,1.01,37.9,Orange,3985,155.68
+Satara,2023,Drought,307.6,34.2,0.28,93.0,Orange,1817,200.68
+Satara,2023,Excessive Rainfall,442.0,35.8,2.66,78.6,Orange,3454,203.88
+Satara,2024,Earthquake,101.2,29.8,4.18,44.6,Red,40245,96.18
+Satara,2024,Flood,225.8,36.1,4.25,45.6,Orange,1388,34.77
+Satara,2024,Landslides,404.8,36.9,1.36,83.0,Orange,4309,216.04
+Satara,2024,Heatwave,417.6,27.8,3.42,59.9,Orange,3778,211.29
+Satara,2024,Drought,360.6,37.1,0.88,65.4,Orange,4718,246.24
+Satara,2024,Excessive Rainfall,67.3,25.8,0.68,77.2,Yellow,1460,8.27
+Satara,2025,Earthquake,252.3,41.3,3.32,65.2,Red,45585,149.64
+Satara,2025,Flood,169.0,35.0,3.13,86.8,Orange,3925,160.89
+Satara,2025,Landslides,114.0,32.6,0.14,46.0,Yellow,4963,7.4
+Satara,2025,Heatwave,89.7,31.2,3.62,43.3,Orange,3798,141.0
+Satara,2025,Drought,296.4,26.3,1.66,80.9,Orange,523,140.79
+Satara,2025,Excessive Rainfall,354.4,22.8,3.38,43.2,Orange,2155,239.73
+Satara,2026,Earthquake,180.8,25.4,1.44,87.0,Yellow,2157,9.97
+Satara,2026,Flood,229.4,38.6,4.0,68.5,Orange,2356,100.92
+Satara,2026,Landslides,328.2,22.1,2.83,53.1,Orange,918,199.58
+Satara,2026,Heatwave,285.3,33.1,2.93,34.2,Orange,3026,147.1
+Satara,2026,Drought,274.3,35.9,3.08,82.3,Orange,4212,71.11
+Satara,2026,Excessive Rainfall,249.3,23.8,0.36,51.7,Orange,3684,197.3
+Sangli,2021,Earthquake,365.4,33.9,2.04,39.6,Orange,2453,85.41
+Sangli,2021,Flood,85.4,27.1,2.73,77.8,Orange,4699,249.6
+Sangli,2021,Landslides,307.0,31.7,2.9,81.1,Orange,2344,33.99
+Sangli,2021,Heatwave,385.9,30.8,2.62,68.2,Orange,2130,50.2
+Sangli,2021,Drought,183.8,22.6,0.21,84.1,Yellow,2831,3.09
+Sangli,2021,Excessive Rainfall,169.5,43.6,1.24,57.9,Orange,4288,218.82
+Sangli,2022,Earthquake,124.4,40.5,2.12,61.4,Orange,862,37.7
+Sangli,2022,Flood,341.2,33.4,2.02,77.4,Red,21123,192.55
+Sangli,2022,Landslides,294.1,25.1,3.41,72.7,Orange,810,239.37
+Sangli,2022,Heatwave,72.8,28.5,1.25,46.1,Yellow,1622,9.11
+Sangli,2022,Drought,158.8,39.5,2.08,80.5,Orange,2694,21.01
+Sangli,2022,Excessive Rainfall,63.4,23.4,4.09,39.1,Orange,2349,135.44
+Sangli,2023,Earthquake,188.9,42.7,0.2,73.1,Orange,3020,241.03
+Sangli,2023,Flood,424.7,23.2,1.94,46.9,Red,78690,184.05
+Sangli,2023,Landslides,152.6,37.0,0.97,66.7,Orange,4874,118.66
+Sangli,2023,Heatwave,293.4,30.0,0.6,39.8,Orange,1629,60.2
+Sangli,2023,Drought,390.2,34.9,2.4,37.5,Orange,3752,215.73
+Sangli,2023,Excessive Rainfall,77.1,38.3,2.49,35.3,Orange,2681,117.28
+Sangli,2024,Earthquake,116.3,43.8,3.84,73.5,Red,38823,118.26
+Sangli,2024,Flood,310.4,34.5,0.37,63.3,Red,42146,202.57
+Sangli,2024,Landslides,70.8,40.1,0.99,46.8,Orange,1985,45.35
+Sangli,2024,Heatwave,352.7,33.9,1.0,87.1,Orange,4417,220.5
+Sangli,2024,Drought,145.5,32.4,4.43,80.2,Orange,793,11.66
+Sangli,2024,Excessive Rainfall,235.6,42.9,2.47,62.4,Orange,3455,30.84
+Sangli,2025,Earthquake,378.8,30.7,3.51,92.7,Red,46633,54.92
+Sangli,2025,Flood,164.9,40.2,2.64,71.2,Orange,2281,200.49
+Sangli,2025,Landslides,416.0,34.3,0.8,75.2,Orange,1925,199.35
+Sangli,2025,Heatwave,392.9,42.8,1.32,93.9,Red,24141,39.47
+Sangli,2025,Drought,123.7,42.6,2.98,39.9,Orange,3268,112.88
+Sangli,2025,Excessive Rainfall,83.4,42.3,3.64,62.8,Orange,2379,241.95
+Sangli,2026,Earthquake,443.6,37.4,2.89,40.8,Orange,2423,221.07
+Sangli,2026,Flood,114.9,22.3,2.56,64.3,Orange,4506,181.24
+Sangli,2026,Landslides,81.8,38.8,0.92,85.8,Orange,2933,205.67
+Sangli,2026,Heatwave,334.1,29.2,2.17,83.4,Orange,2110,117.52
+Sangli,2026,Drought,247.7,41.0,1.57,41.3,Orange,4216,179.44
+Sangli,2026,Excessive Rainfall,90.3,27.5,0.72,52.6,Yellow,3869,4.78
+Solapur,2021,Earthquake,310.5,36.3,1.65,84.7,Orange,4905,120.47
+Solapur,2021,Flood,303.7,24.9,3.08,51.1,Red,14874,173.15
+Solapur,2021,Landslides,120.0,41.7,1.1,84.4,Orange,3392,73.42
+Solapur,2021,Heatwave,327.7,33.8,1.44,43.8,Orange,1867,13.13
+Solapur,2021,Drought,311.3,43.6,3.93,79.8,Orange,3492,198.17
+Solapur,2021,Excessive Rainfall,154.1,42.9,3.05,66.4,Orange,2511,32.19
+Solapur,2022,Earthquake,234.1,41.9,2.51,54.7,Orange,998,244.32
+Solapur,2022,Flood,219.0,23.0,3.36,89.7,Orange,4362,73.61
+Solapur,2022,Landslides,166.9,42.9,3.42,82.3,Orange,4832,9.41
+Solapur,2022,Heatwave,340.7,29.0,3.75,48.3,Orange,1006,218.82
+Solapur,2022,Drought,331.5,34.4,0.52,45.7,Orange,2609,8.04
+Solapur,2022,Excessive Rainfall,170.5,35.8,1.41,49.5,Orange,716,187.08
+Solapur,2023,Earthquake,411.2,41.6,3.04,68.6,Red,22973,223.61
+Solapur,2023,Flood,81.6,27.5,3.6,32.3,Orange,4979,147.79
+Solapur,2023,Landslides,392.3,34.0,0.38,84.0,Orange,1017,151.75
+Solapur,2023,Heatwave,87.5,42.9,3.04,83.9,Red,50024,220.35
+Solapur,2023,Drought,257.0,31.9,1.49,58.2,Orange,3208,194.6
+Solapur,2023,Excessive Rainfall,407.0,32.2,2.77,71.0,Orange,3661,149.97
+Solapur,2024,Earthquake,145.0,33.8,0.56,55.0,Yellow,3435,5.13
+Solapur,2024,Flood,430.2,35.8,3.37,62.9,Red,14965,160.36
+Solapur,2024,Landslides,151.8,30.3,2.18,33.0,Orange,1745,39.31
+Solapur,2024,Heatwave,438.6,29.6,2.22,42.7,Orange,1763,154.64
+Solapur,2024,Drought,132.8,33.9,0.12,30.5,Yellow,665,2.58
+Solapur,2024,Excessive Rainfall,93.2,29.8,3.63,67.2,Orange,1820,130.6
+Solapur,2025,Earthquake,422.7,31.1,0.48,70.1,Orange,2053,32.89
+Solapur,2025,Flood,253.0,42.1,2.27,75.6,Orange,1091,248.24
+Solapur,2025,Landslides,159.9,31.1,1.96,56.7,Yellow,3713,9.12
+Solapur,2025,Heatwave,293.2,29.1,3.72,92.1,Orange,507,206.19
+Solapur,2025,Drought,304.6,23.2,1.23,33.9,Orange,3589,152.93
+Solapur,2025,Excessive Rainfall,95.8,30.8,2.11,54.0,Orange,2385,34.65
+Solapur,2026,Earthquake,350.5,23.6,0.45,53.1,Orange,3508,235.72
+Solapur,2026,Flood,321.5,30.3,2.71,30.7,Red,73930,160.84
+Solapur,2026,Landslides,295.0,42.1,3.29,37.8,Orange,798,226.1
+Solapur,2026,Heatwave,263.6,25.3,0.15,57.4,Orange,2687,77.28
+Solapur,2026,Drought,280.9,23.0,0.64,66.3,Orange,3781,89.08
+Solapur,2026,Excessive Rainfall,310.9,41.4,3.15,57.9,Orange,1739,169.88
+Kolhapur,2021,Earthquake,172.5,40.1,2.06,81.9,Orange,4359,206.49
+Kolhapur,2021,Flood,416.7,31.9,1.5,67.8,Red,52075,95.94
+Kolhapur,2021,Landslides,332.2,37.8,1.75,40.8,Orange,1141,110.48
+Kolhapur,2021,Heatwave,406.0,30.0,0.78,31.7,Orange,3366,163.23
+Kolhapur,2021,Drought,186.2,23.6,1.9,50.2,Yellow,3226,6.93
+Kolhapur,2021,Excessive Rainfall,195.8,27.0,4.45,59.5,Orange,1132,173.63
+Kolhapur,2022,Earthquake,244.2,22.6,2.32,92.7,Orange,675,99.13
+Kolhapur,2022,Flood,62.4,30.9,0.8,31.5,Yellow,2563,7.68
+Kolhapur,2022,Landslides,165.7,42.7,0.61,92.1,Orange,4497,81.92
+Kolhapur,2022,Heatwave,291.2,41.0,4.43,48.7,Red,37263,240.48
+Kolhapur,2022,Drought,204.2,29.8,2.48,40.0,Orange,2937,140.66
+Kolhapur,2022,Excessive Rainfall,354.8,41.2,2.04,49.7,Orange,1375,68.54
+Kolhapur,2023,Earthquake,73.1,29.9,1.29,92.8,Yellow,2062,5.8
+Kolhapur,2023,Flood,282.2,25.2,2.05,70.7,Orange,2308,124.78
+Kolhapur,2023,Landslides,447.5,42.2,2.84,67.0,Orange,1405,157.06
+Kolhapur,2023,Heatwave,208.1,22.9,2.19,65.3,Orange,4838,60.8
+Kolhapur,2023,Drought,413.8,38.6,2.45,86.5,Orange,4057,37.01
+Kolhapur,2023,Excessive Rainfall,99.9,40.3,1.31,87.0,Orange,1169,236.29
+Kolhapur,2024,Earthquake,235.1,44.6,2.23,86.1,Orange,2188,149.24
+Kolhapur,2024,Flood,164.3,26.7,3.45,55.1,Orange,2715,130.26
+Kolhapur,2024,Landslides,280.9,41.9,4.42,56.5,Orange,3940,207.74
+Kolhapur,2024,Heatwave,279.4,44.0,0.98,37.1,Red,40740,214.22
+Kolhapur,2024,Drought,388.8,42.5,0.37,87.4,Orange,2796,114.84
+Kolhapur,2024,Excessive Rainfall,300.6,43.3,0.18,61.0,Orange,3752,173.49
+Kolhapur,2025,Earthquake,327.0,25.1,1.42,53.3,Orange,1754,202.09
+Kolhapur,2025,Flood,134.3,44.0,0.14,94.9,Orange,4228,170.82
+Kolhapur,2025,Landslides,167.8,22.3,3.35,84.2,Orange,1142,186.42
+Kolhapur,2025,Heatwave,351.4,39.7,3.0,79.8,Orange,3261,212.25
+Kolhapur,2025,Drought,85.4,33.2,0.44,56.5,Orange,797,104.74
+Kolhapur,2025,Excessive Rainfall,189.5,24.6,3.66,91.6,Orange,4798,22.72
+Kolhapur,2026,Earthquake,259.0,28.9,0.44,62.5,Orange,3681,199.66
+Kolhapur,2026,Flood,70.1,23.7,1.87,49.2,Yellow,1764,2.71
+Kolhapur,2026,Landslides,371.4,43.4,1.88,88.9,Orange,2643,83.77
+Kolhapur,2026,Heatwave,140.4,36.7,4.41,69.2,Orange,3415,92.66
+Kolhapur,2026,Drought,99.2,42.4,2.31,59.2,Orange,3311,148.54
+Kolhapur,2026,Excessive Rainfall,78.7,37.7,1.16,76.4,Orange,4117,206.52
+Nashik,2021,Earthquake,271.0,34.0,0.73,80.4,Orange,2735,71.5
+Nashik,2021,Flood,163.7,25.1,2.87,33.5,Orange,1929,188.42
+Nashik,2021,Landslides,50.1,33.8,0.31,48.0,Yellow,782,7.22
+Nashik,2021,Heatwave,385.7,22.1,1.19,78.2,Orange,958,82.49
+Nashik,2021,Drought,194.1,28.2,3.81,50.4,Orange,4513,198.29
+Nashik,2021,Excessive Rainfall,223.5,42.9,1.76,92.7,Orange,3591,26.88
+Nashik,2022,Earthquake,247.5,30.9,2.88,75.8,Orange,1251,6.07
+Nashik,2022,Flood,335.2,37.3,4.35,79.5,Red,59177,237.94
+Nashik,2022,Landslides,169.2,24.4,3.54,71.9,Orange,2120,16.81
+Nashik,2022,Heatwave,432.7,33.5,2.0,59.8,Orange,2159,56.18
+Nashik,2022,Drought,197.9,23.2,3.48,57.1,Orange,4326,206.43
+Nashik,2022,Excessive Rainfall,134.8,37.1,2.18,87.2,Orange,3550,57.86
+Nashik,2023,Earthquake,293.1,28.8,0.7,72.4,Orange,1920,185.96
+Nashik,2023,Flood,307.9,31.1,3.24,42.9,Red,30118,223.1
+Nashik,2023,Landslides,197.1,23.3,0.59,63.5,Yellow,4259,3.04
+Nashik,2023,Heatwave,55.9,30.7,1.58,31.3,Yellow,2361,1.68
+Nashik,2023,Drought,247.1,31.3,2.44,68.7,Orange,2588,7.43
+Nashik,2023,Excessive Rainfall,435.4,33.9,3.08,50.3,Orange,3978,194.63
+Nashik,2024,Earthquake,258.5,44.4,0.65,31.1,Orange,4132,193.69
+Nashik,2024,Flood,98.1,28.1,0.18,49.1,Yellow,2830,7.84
+Nashik,2024,Landslides,189.2,30.6,0.11,49.5,Yellow,4883,6.64
+Nashik,2024,Heatwave,388.8,22.5,4.05,80.9,Orange,2560,196.19
+Nashik,2024,Drought,209.2,29.0,0.39,44.8,Orange,2678,65.42
+Nashik,2024,Excessive Rainfall,349.0,32.9,0.35,92.3,Orange,4033,235.97
+Nashik,2025,Earthquake,446.5,34.5,4.34,34.9,Red,25776,94.59
+Nashik,2025,Flood,128.3,25.2,2.84,80.8,Orange,1161,146.68
+Nashik,2025,Landslides,374.4,36.6,1.81,73.8,Orange,2053,68.68
+Nashik,2025,Heatwave,417.0,28.7,2.17,87.9,Orange,779,178.39
+Nashik,2025,Drought,108.9,22.2,2.88,59.1,Orange,4810,37.9
+Nashik,2025,Excessive Rainfall,261.9,27.6,2.3,74.2,Orange,1736,23.68
+Nashik,2026,Earthquake,372.8,32.6,2.5,58.1,Orange,1245,15.76
+Nashik,2026,Flood,228.2,26.8,0.32,84.8,Orange,4069,245.39
+Nashik,2026,Landslides,391.5,27.6,4.33,42.8,Orange,4976,238.1
+Nashik,2026,Heatwave,334.7,44.6,2.61,46.9,Red,51549,112.06
+Nashik,2026,Drought,79.2,36.3,4.42,42.4,Orange,4585,199.19
+Nashik,2026,Excessive Rainfall,427.5,44.1,2.39,93.5,Orange,1227,190.54
+Dhule,2021,Earthquake,240.8,38.5,1.19,71.6,Orange,1232,168.32
+Dhule,2021,Flood,276.0,39.7,2.3,30.8,Orange,2106,7.21
+Dhule,2021,Landslides,420.5,27.3,2.89,44.4,Orange,4316,83.81
+Dhule,2021,Heatwave,341.5,24.2,1.99,31.9,Orange,3480,122.82
+Dhule,2021,Drought,97.4,28.6,1.85,89.8,Orange,702,248.35
+Dhule,2021,Excessive Rainfall,354.4,30.5,1.83,79.0,Orange,4779,230.01
+Dhule,2022,Earthquake,280.8,30.2,3.57,46.3,Red,35100,143.2
+Dhule,2022,Flood,312.7,27.5,0.94,89.7,Red,45417,29.94
+Dhule,2022,Landslides,138.3,22.9,0.26,41.4,Yellow,1771,8.73
+Dhule,2022,Heatwave,430.2,35.4,2.02,67.7,Orange,3914,131.59
+Dhule,2022,Drought,163.0,30.1,4.03,91.5,Orange,2387,223.68
+Dhule,2022,Excessive Rainfall,362.1,33.0,2.29,43.3,Orange,1337,149.83
+Dhule,2023,Earthquake,182.6,41.7,1.01,34.6,Orange,4733,21.91
+Dhule,2023,Flood,252.8,31.4,3.67,84.3,Orange,3621,86.39
+Dhule,2023,Landslides,358.4,37.1,0.77,86.9,Orange,1771,137.08
+Dhule,2023,Heatwave,220.1,22.9,0.66,79.8,Orange,2374,5.0
+Dhule,2023,Drought,259.0,23.3,4.38,44.7,Orange,1867,79.53
+Dhule,2023,Excessive Rainfall,142.2,22.0,3.31,92.8,Orange,3483,59.95
+Dhule,2024,Earthquake,346.8,41.5,1.96,49.7,Orange,3706,84.7
+Dhule,2024,Flood,376.7,26.2,1.73,88.6,Red,78940,202.64
+Dhule,2024,Landslides,351.7,31.0,2.7,73.0,Orange,2950,24.22
+Dhule,2024,Heatwave,333.7,25.8,3.53,67.9,Orange,690,238.29
+Dhule,2024,Drought,156.1,35.8,1.4,76.4,Orange,961,190.96
+Dhule,2024,Excessive Rainfall,255.5,33.7,1.72,90.6,Orange,3637,207.74
+Dhule,2025,Earthquake,335.7,32.6,4.15,75.1,Red,70318,183.6
+Dhule,2025,Flood,159.6,40.6,0.96,52.4,Orange,4903,87.22
+Dhule,2025,Landslides,392.6,38.1,3.3,66.5,Orange,2733,237.04
+Dhule,2025,Heatwave,202.2,25.7,3.56,77.7,Orange,613,99.17
+Dhule,2025,Drought,385.6,22.3,3.2,93.1,Orange,1557,112.23
+Dhule,2025,Excessive Rainfall,331.9,40.8,2.5,92.9,Orange,2771,17.66
+Dhule,2026,Earthquake,337.4,41.8,0.89,82.0,Orange,2284,140.41
+Dhule,2026,Flood,102.7,41.9,0.79,50.1,Orange,4421,76.06
+Dhule,2026,Landslides,319.1,40.3,1.2,70.6,Orange,4247,145.08
+Dhule,2026,Heatwave,412.4,22.3,3.07,33.4,Orange,1794,139.47
+Dhule,2026,Drought,172.7,30.1,2.83,51.7,Orange,2320,184.51
+Dhule,2026,Excessive Rainfall,77.3,40.0,1.36,58.1,Orange,1996,172.93
+Jalgaon,2021,Earthquake,72.6,30.6,4.26,71.7,Red,54259,169.51
+Jalgaon,2021,Flood,129.6,31.6,3.4,36.6,Orange,1743,73.07
+Jalgaon,2021,Landslides,222.8,44.5,0.4,63.7,Orange,4868,48.94
+Jalgaon,2021,Heatwave,95.3,31.3,3.35,75.8,Orange,2059,108.57
+Jalgaon,2021,Drought,209.0,28.1,1.0,61.4,Orange,1793,70.79
+Jalgaon,2021,Excessive Rainfall,312.7,44.3,2.76,35.0,Orange,4781,23.52
+Jalgaon,2022,Earthquake,168.9,24.1,2.74,70.5,Orange,1703,163.88
+Jalgaon,2022,Flood,56.0,44.2,1.2,73.9,Orange,3245,178.12
+Jalgaon,2022,Landslides,175.2,28.2,2.73,86.3,Orange,976,236.95
+Jalgaon,2022,Heatwave,111.9,43.7,3.34,87.4,Red,51131,54.64
+Jalgaon,2022,Drought,330.5,37.6,1.9,31.0,Orange,1638,147.82
+Jalgaon,2022,Excessive Rainfall,230.1,44.0,1.86,84.6,Orange,3526,51.19
+Jalgaon,2023,Earthquake,440.8,24.3,0.14,58.2,Orange,3867,27.69
+Jalgaon,2023,Flood,415.8,32.0,1.24,58.2,Red,10633,182.24
+Jalgaon,2023,Landslides,285.8,36.1,2.91,45.7,Orange,911,179.94
+Jalgaon,2023,Heatwave,129.7,42.2,3.35,30.9,Red,25008,65.85
+Jalgaon,2023,Drought,158.3,27.7,0.38,59.8,Yellow,3230,7.46
+Jalgaon,2023,Excessive Rainfall,319.1,23.9,4.29,84.5,Orange,4203,202.25
+Jalgaon,2024,Earthquake,423.1,34.5,0.98,70.1,Orange,3820,187.01
+Jalgaon,2024,Flood,258.6,23.6,1.73,89.8,Orange,2922,148.19
+Jalgaon,2024,Landslides,157.5,30.5,4.04,73.3,Orange,2544,197.91
+Jalgaon,2024,Heatwave,302.1,27.7,3.2,57.8,Orange,3421,113.42
+Jalgaon,2024,Drought,424.5,23.5,3.73,49.0,Orange,598,113.76
+Jalgaon,2024,Excessive Rainfall,170.4,33.6,0.35,61.9,Yellow,974,9.31
+Jalgaon,2025,Earthquake,355.8,31.4,2.98,46.9,Orange,1222,44.08
+Jalgaon,2025,Flood,78.2,26.3,3.02,87.3,Orange,3583,204.46
+Jalgaon,2025,Landslides,94.2,28.7,1.46,46.2,Yellow,2909,5.39
+Jalgaon,2025,Heatwave,192.8,30.1,3.75,81.3,Orange,4612,80.41
+Jalgaon,2025,Drought,431.1,29.5,1.66,62.9,Orange,4443,235.57
+Jalgaon,2025,Excessive Rainfall,91.0,31.0,2.53,62.7,Orange,4364,52.5
+Jalgaon,2026,Earthquake,320.8,41.3,3.88,78.6,Red,52738,112.61
+Jalgaon,2026,Flood,114.1,37.5,0.89,75.1,Orange,1028,61.25
+Jalgaon,2026,Landslides,116.1,22.0,3.26,77.6,Orange,1226,131.16
+Jalgaon,2026,Heatwave,83.4,22.4,0.83,87.9,Yellow,2094,2.79
+Jalgaon,2026,Drought,92.1,27.1,2.38,69.5,Orange,759,65.11
+Jalgaon,2026,Excessive Rainfall,206.4,27.4,1.07,92.4,Orange,3005,155.99
+Nandurbar,2021,Earthquake,216.3,31.9,2.48,75.3,Orange,1272,177.03
+Nandurbar,2021,Flood,250.0,31.5,3.93,71.0,Orange,1019,135.46
+Nandurbar,2021,Landslides,292.3,24.7,1.58,39.3,Orange,1428,174.56
+Nandurbar,2021,Heatwave,206.7,42.6,1.0,63.0,Red,11268,107.72
+Nandurbar,2021,Drought,367.1,23.6,2.19,66.4,Orange,3598,158.96
+Nandurbar,2021,Excessive Rainfall,151.3,22.2,3.28,64.8,Orange,4196,209.85
+Nandurbar,2022,Earthquake,387.3,33.2,1.57,81.5,Orange,1325,115.57
+Nandurbar,2022,Flood,392.0,42.3,2.15,34.9,Red,66247,100.02
+Nandurbar,2022,Landslides,410.7,26.7,0.39,87.0,Orange,2937,100.4
+Nandurbar,2022,Heatwave,437.2,23.5,2.95,34.8,Orange,4117,96.99
+Nandurbar,2022,Drought,223.4,44.9,2.56,50.9,Orange,2077,58.93
+Nandurbar,2022,Excessive Rainfall,199.0,23.6,1.73,60.2,Yellow,3455,7.37
+Nandurbar,2023,Earthquake,333.5,22.2,1.06,73.0,Orange,523,123.58
+Nandurbar,2023,Flood,371.8,39.8,2.51,34.3,Red,50859,192.8
+Nandurbar,2023,Landslides,362.8,39.3,3.63,63.7,Orange,3520,39.38
+Nandurbar,2023,Heatwave,298.2,39.1,0.85,42.7,Orange,3874,223.15
+Nandurbar,2023,Drought,413.3,39.5,2.73,72.5,Orange,3104,222.84
+Nandurbar,2023,Excessive Rainfall,303.0,25.6,2.19,76.6,Orange,1410,71.38
+Nandurbar,2024,Earthquake,175.5,27.6,1.05,57.6,Yellow,2781,9.12
+Nandurbar,2024,Flood,125.2,23.8,3.16,54.9,Orange,3467,206.35
+Nandurbar,2024,Landslides,368.5,28.3,3.15,47.2,Orange,3363,235.07
+Nandurbar,2024,Heatwave,179.8,28.2,0.94,75.2,Yellow,3178,2.58
+Nandurbar,2024,Drought,155.9,37.2,3.69,80.6,Orange,1344,191.41
+Nandurbar,2024,Excessive Rainfall,85.4,38.1,1.72,58.1,Orange,1668,12.63
+Nandurbar,2025,Earthquake,63.5,42.2,1.17,66.2,Orange,3500,14.55
+Nandurbar,2025,Flood,179.2,42.7,4.01,51.1,Orange,4982,225.74
+Nandurbar,2025,Landslides,380.2,41.4,1.2,67.5,Orange,927,21.48
+Nandurbar,2025,Heatwave,449.6,29.5,3.39,82.4,Orange,4989,215.22
+Nandurbar,2025,Drought,146.6,22.9,1.91,38.5,Yellow,2121,0.71
+Nandurbar,2025,Excessive Rainfall,363.5,35.0,1.48,72.5,Orange,564,61.84
+Nandurbar,2026,Earthquake,355.7,36.3,3.45,32.5,Red,53366,210.09
+Nandurbar,2026,Flood,275.4,36.4,3.9,68.2,Orange,4958,147.33
+Nandurbar,2026,Landslides,352.7,32.2,3.21,55.3,Orange,3185,61.07
+Nandurbar,2026,Heatwave,421.3,43.4,1.6,64.3,Red,79694,56.85
+Nandurbar,2026,Drought,442.4,36.9,3.64,76.5,Orange,740,150.32
+Nandurbar,2026,Excessive Rainfall,231.9,37.5,3.08,54.3,Orange,1253,235.71
+Ahmednagar,2021,Earthquake,250.1,37.9,3.17,72.2,Red,20934,72.45
+Ahmednagar,2021,Flood,304.4,35.8,0.89,75.8,Red,56743,116.52
+Ahmednagar,2021,Landslides,384.9,25.9,0.18,80.6,Orange,3648,154.38
+Ahmednagar,2021,Heatwave,385.3,40.5,4.33,64.8,Red,38132,124.68
+Ahmednagar,2021,Drought,111.5,35.2,1.32,89.9,Orange,3167,147.88
+Ahmednagar,2021,Excessive Rainfall,192.0,23.2,0.24,57.5,Yellow,3230,1.3
+Ahmednagar,2022,Earthquake,402.4,42.3,3.0,43.7,Orange,4487,216.43
+Ahmednagar,2022,Flood,128.7,39.0,1.36,82.2,Orange,635,249.32
+Ahmednagar,2022,Landslides,408.9,36.3,4.38,60.2,Orange,780,212.61
+Ahmednagar,2022,Heatwave,184.1,23.5,4.39,83.1,Orange,4720,213.87
+Ahmednagar,2022,Drought,84.0,30.9,0.41,43.7,Orange,2610,61.19
+Ahmednagar,2022,Excessive Rainfall,157.4,24.3,0.84,39.6,Yellow,3916,9.74
+Ahmednagar,2023,Earthquake,437.1,32.1,1.32,81.9,Orange,1847,84.93
+Ahmednagar,2023,Flood,143.0,25.0,1.23,53.1,Yellow,781,6.9
+Ahmednagar,2023,Landslides,134.2,40.6,0.75,52.3,Orange,1197,216.84
+Ahmednagar,2023,Heatwave,83.1,33.1,1.43,66.6,Yellow,1117,8.14
+Ahmednagar,2023,Drought,282.3,33.6,0.73,70.6,Orange,2695,72.04
+Ahmednagar,2023,Excessive Rainfall,82.9,32.6,1.45,83.5,Yellow,2383,1.04
+Ahmednagar,2024,Earthquake,233.4,38.7,2.63,73.4,Orange,4379,195.38
+Ahmednagar,2024,Flood,175.6,34.4,3.8,94.3,Orange,2171,222.93
+Ahmednagar,2024,Landslides,128.1,33.3,3.36,62.0,Orange,4272,123.38
+Ahmednagar,2024,Heatwave,194.6,41.8,1.89,51.3,Red,63371,116.23
+Ahmednagar,2024,Drought,100.4,26.5,4.29,41.4,Orange,3106,144.09
+Ahmednagar,2024,Excessive Rainfall,245.8,36.8,1.11,65.9,Orange,3477,96.18
+Ahmednagar,2025,Earthquake,106.5,35.1,0.92,48.1,Orange,1322,58.58
+Ahmednagar,2025,Flood,380.3,28.6,4.18,93.0,Red,20010,144.96
+Ahmednagar,2025,Landslides,199.8,40.3,1.72,35.7,Orange,4303,141.41
+Ahmednagar,2025,Heatwave,368.4,26.0,3.06,44.3,Orange,4433,58.46
+Ahmednagar,2025,Drought,149.9,28.1,0.1,86.6,Yellow,3322,8.03
+Ahmednagar,2025,Excessive Rainfall,350.1,25.5,2.12,52.8,Orange,2687,27.98
+Ahmednagar,2026,Earthquake,418.3,22.9,1.38,43.5,Orange,4587,63.35
+Ahmednagar,2026,Flood,237.2,32.7,3.45,40.0,Orange,2434,124.38
+Ahmednagar,2026,Landslides,288.8,45.0,3.49,55.9,Orange,1268,207.75
+Ahmednagar,2026,Heatwave,62.2,26.7,1.6,63.2,Yellow,4597,6.34
+Ahmednagar,2026,Drought,253.9,33.5,0.32,32.3,Orange,2471,140.03
+Ahmednagar,2026,Excessive Rainfall,385.7,25.7,0.21,59.2,Orange,723,63.18
+Chhatrapati Sambhajinagar,2021,Earthquake,339.8,24.6,2.78,48.3,Orange,2208,47.51
+Chhatrapati Sambhajinagar,2021,Flood,370.6,31.0,3.4,38.2,Red,26585,194.33
+Chhatrapati Sambhajinagar,2021,Landslides,321.0,35.0,4.19,55.2,Orange,586,21.21
+Chhatrapati Sambhajinagar,2021,Heatwave,380.7,34.1,3.51,45.2,Orange,635,89.55
+Chhatrapati Sambhajinagar,2021,Drought,434.6,37.4,4.21,47.3,Orange,3553,154.81
+Chhatrapati Sambhajinagar,2021,Excessive Rainfall,177.0,41.5,4.27,87.5,Orange,1748,186.07
+Chhatrapati Sambhajinagar,2022,Earthquake,162.6,44.2,0.15,76.5,Orange,3302,178.03
+Chhatrapati Sambhajinagar,2022,Flood,446.0,29.2,1.6,35.1,Red,28273,113.49
+Chhatrapati Sambhajinagar,2022,Landslides,187.4,41.2,4.22,42.1,Orange,4678,96.26
+Chhatrapati Sambhajinagar,2022,Heatwave,74.7,24.1,0.82,68.7,Yellow,4856,1.93
+Chhatrapati Sambhajinagar,2022,Drought,228.7,33.5,1.19,60.6,Orange,3880,167.17
+Chhatrapati Sambhajinagar,2022,Excessive Rainfall,351.5,35.3,4.08,83.1,Orange,750,190.48
+Chhatrapati Sambhajinagar,2023,Earthquake,52.8,26.9,3.02,56.7,Red,71921,103.59
+Chhatrapati Sambhajinagar,2023,Flood,408.2,42.9,1.48,74.9,Red,23342,71.55
+Chhatrapati Sambhajinagar,2023,Landslides,123.9,29.9,1.99,84.0,Yellow,3807,1.64
+Chhatrapati Sambhajinagar,2023,Heatwave,262.6,28.6,2.27,49.5,Orange,2452,151.04
+Chhatrapati Sambhajinagar,2023,Drought,115.8,24.7,2.51,88.7,Orange,3798,89.27
+Chhatrapati Sambhajinagar,2023,Excessive Rainfall,313.5,43.4,3.71,66.8,Orange,4542,165.97
+Chhatrapati Sambhajinagar,2024,Earthquake,209.8,29.5,0.15,83.7,Orange,970,201.24
+Chhatrapati Sambhajinagar,2024,Flood,280.7,32.7,0.62,93.7,Orange,802,57.6
+Chhatrapati Sambhajinagar,2024,Landslides,287.9,39.0,0.24,72.8,Orange,964,135.41
+Chhatrapati Sambhajinagar,2024,Heatwave,119.0,35.1,1.4,91.0,Orange,4926,205.59
+Chhatrapati Sambhajinagar,2024,Drought,153.9,44.3,2.0,52.6,Orange,737,17.34
+Chhatrapati Sambhajinagar,2024,Excessive Rainfall,326.8,32.5,1.1,69.9,Orange,3099,66.95
+Chhatrapati Sambhajinagar,2025,Earthquake,193.7,40.9,3.71,61.0,Red,35379,90.95
+Chhatrapati Sambhajinagar,2025,Flood,372.3,29.5,1.02,35.5,Red,43749,119.34
+Chhatrapati Sambhajinagar,2025,Landslides,386.4,27.1,1.78,82.5,Orange,2230,206.79
+Chhatrapati Sambhajinagar,2025,Heatwave,233.6,29.0,4.2,37.7,Orange,3577,233.77
+Chhatrapati Sambhajinagar,2025,Drought,262.6,22.8,2.19,56.5,Orange,3453,44.5
+Chhatrapati Sambhajinagar,2025,Excessive Rainfall,438.5,34.9,3.24,34.4,Orange,1023,107.33
+Chhatrapati Sambhajinagar,2026,Earthquake,295.1,43.6,3.01,35.0,Red,48546,91.89
+Chhatrapati Sambhajinagar,2026,Flood,211.3,41.2,3.68,69.8,Orange,1649,96.5
+Chhatrapati Sambhajinagar,2026,Landslides,92.3,30.2,1.92,73.9,Yellow,815,6.75
+Chhatrapati Sambhajinagar,2026,Heatwave,208.1,26.2,0.79,83.8,Orange,2386,15.27
+Chhatrapati Sambhajinagar,2026,Drought,117.3,42.2,2.55,45.0,Orange,3791,128.09
+Chhatrapati Sambhajinagar,2026,Excessive Rainfall,433.2,27.1,4.0,90.7,Orange,3359,229.52
+Jalna,2021,Earthquake,301.9,31.3,3.41,64.5,Red,39992,170.97
+Jalna,2021,Flood,342.6,41.0,0.74,84.1,Red,69126,137.37
+Jalna,2021,Landslides,222.5,30.7,4.13,46.3,Orange,2678,211.83
+Jalna,2021,Heatwave,255.6,29.1,2.62,51.1,Orange,1723,14.62
+Jalna,2021,Drought,52.6,44.5,4.35,55.7,Orange,2056,183.45
+Jalna,2021,Excessive Rainfall,318.4,40.5,4.27,56.0,Orange,1696,196.91
+Jalna,2022,Earthquake,446.1,22.6,2.76,72.9,Orange,1041,173.57
+Jalna,2022,Flood,425.4,26.2,2.84,44.5,Red,48252,80.27
+Jalna,2022,Landslides,216.9,25.7,0.85,57.2,Orange,4540,190.53
+Jalna,2022,Heatwave,83.7,31.0,0.54,31.1,Yellow,3211,6.79
+Jalna,2022,Drought,115.2,27.4,0.2,84.3,Yellow,1109,9.76
+Jalna,2022,Excessive Rainfall,142.6,42.0,4.18,57.3,Orange,677,17.4
+Jalna,2023,Earthquake,279.6,31.0,0.23,67.9,Orange,4043,7.77
+Jalna,2023,Flood,172.6,22.9,2.69,55.8,Orange,2948,243.58
+Jalna,2023,Landslides,160.1,38.3,1.29,88.8,Orange,2974,96.81
+Jalna,2023,Heatwave,70.2,31.8,3.76,82.4,Orange,1517,59.96
+Jalna,2023,Drought,376.9,43.4,0.52,59.3,Orange,4418,87.68
+Jalna,2023,Excessive Rainfall,83.4,26.9,3.41,33.3,Orange,2489,125.67
+Jalna,2024,Earthquake,183.8,31.1,2.43,40.5,Orange,4124,145.14
+Jalna,2024,Flood,354.1,25.5,0.76,47.4,Red,38591,93.46
+Jalna,2024,Landslides,321.9,23.3,0.25,55.5,Orange,1370,175.81
+Jalna,2024,Heatwave,306.6,28.0,4.0,88.2,Orange,1534,77.84
+Jalna,2024,Drought,214.5,27.5,3.06,83.7,Orange,4209,169.91
+Jalna,2024,Excessive Rainfall,208.8,25.6,3.35,53.4,Orange,1717,169.46
+Jalna,2025,Earthquake,82.5,44.8,0.79,94.2,Orange,4072,244.43
+Jalna,2025,Flood,313.8,35.3,3.91,48.8,Red,53357,119.58
+Jalna,2025,Landslides,214.5,31.8,1.55,66.7,Orange,1406,213.39
+Jalna,2025,Heatwave,423.8,37.8,3.72,66.2,Orange,572,195.98
+Jalna,2025,Drought,377.4,22.9,4.02,94.5,Orange,1446,77.05
+Jalna,2025,Excessive Rainfall,356.1,27.8,3.91,36.7,Orange,4906,35.86
+Jalna,2026,Earthquake,319.5,41.5,1.53,74.0,Orange,3214,150.59
+Jalna,2026,Flood,323.0,35.2,1.99,47.9,Red,25839,193.3
+Jalna,2026,Landslides,326.9,27.4,2.85,78.6,Orange,769,58.58
+Jalna,2026,Heatwave,102.4,35.9,3.84,32.9,Orange,2035,184.87
+Jalna,2026,Drought,241.4,43.4,1.56,60.2,Orange,867,8.35
+Jalna,2026,Excessive Rainfall,153.4,22.6,2.88,57.7,Orange,1285,139.3
+Beed,2021,Earthquake,168.4,37.3,4.35,33.3,Red,50381,223.14
+Beed,2021,Flood,275.6,33.5,0.41,35.8,Orange,2034,152.22
+Beed,2021,Landslides,416.9,31.4,0.73,76.5,Orange,2864,76.87
+Beed,2021,Heatwave,329.1,42.7,3.59,74.0,Red,76214,171.51
+Beed,2021,Drought,168.3,22.0,1.3,44.2,Yellow,3351,6.79
+Beed,2021,Excessive Rainfall,287.4,22.4,3.31,51.0,Orange,3004,167.94
+Beed,2022,Earthquake,187.1,25.1,0.52,84.0,Yellow,3424,9.22
+Beed,2022,Flood,91.4,31.2,3.31,80.7,Orange,500,33.96
+Beed,2022,Landslides,334.9,30.2,1.22,30.8,Orange,4330,137.37
+Beed,2022,Heatwave,433.1,35.0,2.36,35.5,Orange,2209,139.47
+Beed,2022,Drought,292.9,30.9,1.16,36.2,Orange,934,82.16
+Beed,2022,Excessive Rainfall,120.8,44.7,2.05,64.6,Orange,4980,219.04
+Beed,2023,Earthquake,283.1,40.7,1.54,49.9,Orange,3526,103.66
+Beed,2023,Flood,322.9,29.3,0.69,71.1,Red,50494,36.44
+Beed,2023,Landslides,327.4,38.1,3.42,86.7,Orange,3786,127.49
+Beed,2023,Heatwave,297.7,26.3,0.21,48.5,Orange,3276,113.54
+Beed,2023,Drought,390.0,26.5,0.65,92.6,Orange,2653,31.47
+Beed,2023,Excessive Rainfall,284.2,34.5,0.48,33.7,Orange,3135,30.84
+Beed,2024,Earthquake,267.7,27.4,2.91,83.3,Orange,2741,15.19
+Beed,2024,Flood,325.7,27.8,1.45,69.9,Red,66694,224.99
+Beed,2024,Landslides,283.3,38.8,1.71,71.7,Orange,1354,119.21
+Beed,2024,Heatwave,330.7,34.8,1.68,89.2,Orange,1920,10.13
+Beed,2024,Drought,72.8,39.6,3.19,51.5,Orange,2281,170.54
+Beed,2024,Excessive Rainfall,352.5,32.4,1.91,90.8,Orange,1042,66.47
+Beed,2025,Earthquake,283.8,44.3,1.76,34.0,Orange,2776,88.13
+Beed,2025,Flood,114.8,37.1,4.49,59.4,Orange,2303,91.91
+Beed,2025,Landslides,96.1,42.3,1.93,55.2,Orange,2489,166.62
+Beed,2025,Heatwave,309.3,23.4,3.68,91.1,Orange,4795,163.95
+Beed,2025,Drought,110.6,33.0,2.75,67.8,Orange,2021,103.36
+Beed,2025,Excessive Rainfall,100.7,31.0,0.82,77.7,Yellow,763,2.48
+Beed,2026,Earthquake,270.9,35.7,3.94,67.5,Red,66210,89.64
+Beed,2026,Flood,266.1,23.8,2.59,89.0,Orange,1833,102.1
+Beed,2026,Landslides,107.4,25.5,2.0,68.7,Yellow,4728,1.27
+Beed,2026,Heatwave,352.1,35.5,3.75,35.2,Orange,3335,121.83
+Beed,2026,Drought,381.5,40.0,1.32,91.2,Orange,4438,35.46
+Beed,2026,Excessive Rainfall,438.4,26.1,3.28,32.6,Orange,2823,104.33
+Dharashiv,2021,Earthquake,282.3,43.5,3.06,61.3,Red,76537,203.37
+Dharashiv,2021,Flood,58.8,44.6,0.48,82.9,Orange,1094,73.68
+Dharashiv,2021,Landslides,225.9,36.8,1.78,33.5,Orange,4560,151.87
+Dharashiv,2021,Heatwave,203.3,27.0,2.05,33.1,Orange,4218,206.02
+Dharashiv,2021,Drought,285.2,30.1,3.62,66.1,Orange,3341,207.35
+Dharashiv,2021,Excessive Rainfall,363.8,35.8,1.92,92.3,Orange,3222,137.57
+Dharashiv,2022,Earthquake,138.2,36.4,2.62,42.0,Orange,3219,19.6
+Dharashiv,2022,Flood,355.5,34.0,1.1,73.3,Red,40928,24.63
+Dharashiv,2022,Landslides,115.3,26.2,0.99,55.1,Yellow,2290,0.99
+Dharashiv,2022,Heatwave,254.7,33.1,1.78,84.5,Orange,2775,40.61
+Dharashiv,2022,Drought,74.8,23.6,2.63,66.8,Orange,3010,220.12
+Dharashiv,2022,Excessive Rainfall,433.9,23.1,0.53,32.9,Orange,2935,50.39
+Dharashiv,2023,Earthquake,308.2,23.0,4.26,84.7,Red,15403,77.67
+Dharashiv,2023,Flood,118.0,24.9,0.64,63.7,Yellow,2111,2.84
+Dharashiv,2023,Landslides,445.8,37.7,4.28,39.3,Orange,2996,98.62
+Dharashiv,2023,Heatwave,80.7,22.1,3.05,71.7,Orange,2703,105.64
+Dharashiv,2023,Drought,216.2,22.6,1.58,41.5,Orange,4805,29.11
+Dharashiv,2023,Excessive Rainfall,289.7,38.8,1.49,55.6,Orange,936,63.05
+Dharashiv,2024,Earthquake,121.6,40.3,3.08,65.6,Red,74570,121.4
+Dharashiv,2024,Flood,79.1,28.5,1.64,80.9,Yellow,1583,9.93
+Dharashiv,2024,Landslides,399.7,41.1,1.09,56.0,Orange,4901,105.37
+Dharashiv,2024,Heatwave,122.4,40.4,1.57,77.5,Red,50485,107.9
+Dharashiv,2024,Drought,383.0,40.5,3.91,33.9,Orange,1129,174.55
+Dharashiv,2024,Excessive Rainfall,216.3,34.6,1.87,63.8,Orange,1108,249.15
+Dharashiv,2025,Earthquake,320.2,31.1,0.69,40.3,Orange,4458,237.57
+Dharashiv,2025,Flood,412.8,44.8,1.02,53.1,Red,43866,168.96
+Dharashiv,2025,Landslides,217.4,30.2,2.71,67.4,Orange,2622,44.56
+Dharashiv,2025,Heatwave,271.4,35.1,1.02,78.2,Orange,2096,11.17
+Dharashiv,2025,Drought,362.1,35.0,1.25,75.2,Orange,4083,144.01
+Dharashiv,2025,Excessive Rainfall,344.0,36.0,2.25,38.7,Orange,2385,69.03
+Dharashiv,2026,Earthquake,289.7,33.8,1.37,30.4,Orange,1785,126.58
+Dharashiv,2026,Flood,343.8,22.6,2.67,91.2,Red,43015,47.73
+Dharashiv,2026,Landslides,86.6,36.4,2.52,56.5,Orange,4534,132.74
+Dharashiv,2026,Heatwave,128.5,22.5,3.89,67.5,Orange,3186,223.21
+Dharashiv,2026,Drought,374.1,31.9,3.4,89.3,Orange,1313,145.17
+Dharashiv,2026,Excessive Rainfall,157.5,26.6,1.19,49.9,Yellow,3145,5.77
+Nanded,2021,Earthquake,220.6,36.2,0.46,35.7,Orange,2831,47.1
+Nanded,2021,Flood,135.6,28.5,1.86,82.8,Yellow,3422,0.63
+Nanded,2021,Landslides,317.6,40.4,4.2,31.3,Orange,4487,42.68
+Nanded,2021,Heatwave,233.4,35.0,3.02,74.1,Orange,4986,233.28
+Nanded,2021,Drought,338.1,28.6,3.97,33.2,Orange,4538,61.61
+Nanded,2021,Excessive Rainfall,152.5,27.1,0.71,85.8,Yellow,3537,5.25
+Nanded,2022,Earthquake,145.6,39.4,3.44,50.3,Red,24678,105.62
+Nanded,2022,Flood,440.6,36.8,4.21,49.7,Red,63610,196.56
+Nanded,2022,Landslides,326.7,44.2,1.83,38.5,Orange,3781,169.57
+Nanded,2022,Heatwave,280.0,26.8,2.32,50.3,Orange,3403,109.73
+Nanded,2022,Drought,348.1,27.3,1.88,47.5,Orange,4025,53.66
+Nanded,2022,Excessive Rainfall,413.7,30.5,3.41,88.3,Orange,1322,212.3
+Nanded,2023,Earthquake,432.5,30.7,1.59,34.1,Orange,990,124.11
+Nanded,2023,Flood,149.4,29.3,3.66,86.9,Orange,4364,79.1
+Nanded,2023,Landslides,392.9,39.6,0.75,74.9,Orange,3571,236.53
+Nanded,2023,Heatwave,182.6,33.5,2.94,63.2,Orange,1904,34.39
+Nanded,2023,Drought,371.0,41.8,0.7,91.9,Orange,3480,85.56
+Nanded,2023,Excessive Rainfall,350.7,40.7,4.26,50.3,Orange,1092,215.33
+Nanded,2024,Earthquake,332.0,39.1,3.08,46.4,Red,21820,218.9
+Nanded,2024,Flood,71.5,38.5,2.19,85.2,Orange,1257,98.93
+Nanded,2024,Landslides,384.6,34.6,0.93,76.8,Orange,3219,130.22
+Nanded,2024,Heatwave,234.4,41.1,3.75,76.1,Red,68719,30.82
+Nanded,2024,Drought,318.4,38.0,1.7,87.2,Orange,1006,182.72
+Nanded,2024,Excessive Rainfall,213.1,42.4,0.31,92.5,Orange,3341,171.39
+Nanded,2025,Earthquake,158.2,27.7,4.25,49.4,Red,37518,195.0
+Nanded,2025,Flood,105.7,22.2,2.49,93.4,Orange,2107,95.44
+Nanded,2025,Landslides,187.6,34.0,2.04,87.2,Orange,2784,128.85
+Nanded,2025,Heatwave,105.3,44.6,1.2,34.8,Red,51675,167.47
+Nanded,2025,Drought,216.1,31.7,3.55,42.7,Orange,3419,205.96
+Nanded,2025,Excessive Rainfall,217.6,32.5,1.23,78.9,Orange,1943,130.65
+Nanded,2026,Earthquake,288.4,44.9,2.02,89.8,Orange,746,89.53
+Nanded,2026,Flood,131.7,31.6,1.07,30.0,Yellow,4297,9.19
+Nanded,2026,Landslides,346.9,25.9,0.63,34.4,Orange,4679,182.39
+Nanded,2026,Heatwave,222.2,24.7,2.35,52.7,Orange,3295,96.83
+Nanded,2026,Drought,337.5,24.5,0.26,94.6,Orange,742,62.02
+Nanded,2026,Excessive Rainfall,126.0,22.9,1.82,82.2,Yellow,2498,3.74
+Latur,2021,Earthquake,320.2,33.7,3.89,86.3,Red,64463,7.43
+Latur,2021,Flood,234.3,44.7,2.23,94.1,Orange,1618,189.87
+Latur,2021,Landslides,265.4,44.8,3.87,36.3,Orange,2055,178.06
+Latur,2021,Heatwave,52.8,31.3,1.13,83.2,Yellow,4223,3.7
+Latur,2021,Drought,50.2,29.1,1.16,45.2,Orange,1342,21.71
+Latur,2021,Excessive Rainfall,272.2,28.7,1.94,54.5,Orange,4573,219.6
+Latur,2022,Earthquake,247.2,29.6,0.57,92.0,Orange,1839,19.76
+Latur,2022,Flood,169.2,29.4,0.82,80.9,Yellow,3357,1.66
+Latur,2022,Landslides,99.5,23.6,4.1,42.4,Orange,2950,206.21
+Latur,2022,Heatwave,81.1,44.0,1.19,85.9,Red,69776,46.36
+Latur,2022,Drought,55.3,33.8,3.49,90.8,Orange,4188,227.75
+Latur,2022,Excessive Rainfall,405.3,26.6,1.35,48.8,Orange,2269,97.38
+Latur,2023,Earthquake,267.8,25.7,3.14,40.9,Red,45234,81.03
+Latur,2023,Flood,368.6,39.0,2.94,40.1,Red,16121,139.03
+Latur,2023,Landslides,200.9,31.5,0.28,47.8,Orange,4791,239.13
+Latur,2023,Heatwave,190.9,23.0,0.89,55.5,Yellow,1135,9.5
+Latur,2023,Drought,355.4,24.5,4.42,54.8,Orange,2041,194.93
+Latur,2023,Excessive Rainfall,301.1,26.4,0.74,91.0,Orange,4493,229.82
+Latur,2024,Earthquake,300.2,40.6,0.4,51.8,Orange,3360,81.86
+Latur,2024,Flood,192.4,25.4,2.72,82.9,Orange,1095,98.62
+Latur,2024,Landslides,128.7,27.5,1.42,71.8,Yellow,3632,6.21
+Latur,2024,Heatwave,195.0,41.0,1.0,60.5,Red,22611,201.23
+Latur,2024,Drought,93.9,42.3,1.61,74.5,Orange,3605,11.21
+Latur,2024,Excessive Rainfall,176.4,23.3,2.78,45.7,Orange,862,99.77
+Latur,2025,Earthquake,108.9,28.9,0.49,89.2,Yellow,2677,0.56
+Latur,2025,Flood,99.3,29.1,4.17,40.5,Orange,1426,241.63
+Latur,2025,Landslides,346.6,34.6,3.99,66.0,Orange,1379,135.97
+Latur,2025,Heatwave,116.5,43.1,1.54,54.2,Red,33717,191.16
+Latur,2025,Drought,430.8,39.0,2.73,87.3,Orange,1656,17.15
+Latur,2025,Excessive Rainfall,236.0,27.2,3.37,89.7,Orange,2039,108.82
+Latur,2026,Earthquake,434.6,32.2,2.25,52.9,Orange,3060,227.84
+Latur,2026,Flood,354.9,40.7,1.6,58.2,Red,35427,212.88
+Latur,2026,Landslides,367.6,43.6,2.84,78.2,Orange,4302,202.25
+Latur,2026,Heatwave,208.0,23.2,1.87,73.8,Orange,3870,115.34
+Latur,2026,Drought,192.8,36.6,0.92,78.7,Orange,1418,138.7
+Latur,2026,Excessive Rainfall,166.8,39.2,2.22,44.0,Orange,3718,241.98
+Parbhani,2021,Earthquake,432.9,31.8,2.19,88.4,Orange,3682,133.64
+Parbhani,2021,Flood,150.9,32.3,0.64,43.4,Yellow,676,0.51
+Parbhani,2021,Landslides,440.9,27.6,3.02,84.5,Orange,1189,139.91
+Parbhani,2021,Heatwave,341.2,35.8,3.32,80.0,Orange,3081,243.98
+Parbhani,2021,Drought,186.7,36.9,0.4,88.3,Orange,1975,34.25
+Parbhani,2021,Excessive Rainfall,376.3,35.7,1.83,60.8,Orange,2030,214.36
+Parbhani,2022,Earthquake,397.9,24.0,3.52,85.1,Red,40124,49.55
+Parbhani,2022,Flood,116.2,38.3,2.46,71.3,Orange,1452,53.14
+Parbhani,2022,Landslides,66.6,29.4,2.56,85.8,Orange,2459,168.4
+Parbhani,2022,Heatwave,431.2,38.5,4.19,64.3,Orange,737,68.43
+Parbhani,2022,Drought,340.4,24.8,1.43,64.6,Orange,3202,143.28
+Parbhani,2022,Excessive Rainfall,116.5,30.7,2.82,93.0,Orange,4651,183.27
+Parbhani,2023,Earthquake,354.9,35.6,0.94,73.3,Orange,3211,157.73
+Parbhani,2023,Flood,245.9,34.2,1.57,63.8,Orange,4123,53.4
+Parbhani,2023,Landslides,124.3,24.0,2.02,72.8,Orange,1745,112.24
+Parbhani,2023,Heatwave,273.3,30.0,4.2,90.0,Orange,1975,128.08
+Parbhani,2023,Drought,344.9,22.8,2.19,51.9,Orange,554,230.53
+Parbhani,2023,Excessive Rainfall,271.1,39.0,2.23,35.6,Orange,2831,243.25
+Parbhani,2024,Earthquake,295.7,27.4,2.23,57.9,Orange,977,23.35
+Parbhani,2024,Flood,385.0,27.5,0.96,62.8,Red,14336,193.34
+Parbhani,2024,Landslides,280.7,24.7,0.26,33.4,Orange,1030,209.37
+Parbhani,2024,Heatwave,68.1,32.1,3.81,47.1,Orange,679,108.32
+Parbhani,2024,Drought,229.6,35.3,2.61,51.6,Orange,979,82.31
+Parbhani,2024,Excessive Rainfall,196.7,24.3,3.47,92.8,Orange,4392,242.67
+Parbhani,2025,Earthquake,290.3,38.1,1.35,71.0,Orange,2669,116.63
+Parbhani,2025,Flood,353.1,28.5,1.5,90.1,Red,43994,18.77
+Parbhani,2025,Landslides,415.1,36.0,2.5,46.2,Orange,4334,89.1
+Parbhani,2025,Heatwave,273.7,33.8,0.54,31.0,Orange,2196,241.1
+Parbhani,2025,Drought,291.3,23.8,3.11,90.6,Orange,1067,146.04
+Parbhani,2025,Excessive Rainfall,282.7,39.6,1.89,87.2,Orange,4546,163.93
+Parbhani,2026,Earthquake,299.4,25.0,1.46,43.1,Orange,3921,227.66
+Parbhani,2026,Flood,320.6,28.9,0.91,79.2,Red,25805,121.17
+Parbhani,2026,Landslides,296.6,22.9,1.54,60.5,Orange,4930,41.25
+Parbhani,2026,Heatwave,133.6,25.0,1.0,80.0,Yellow,3044,4.54
+Parbhani,2026,Drought,58.4,22.8,2.06,83.1,Orange,890,221.88
+Parbhani,2026,Excessive Rainfall,265.3,43.0,1.81,83.9,Orange,4709,37.76
+Hingoli,2021,Earthquake,350.6,43.7,3.08,53.6,Red,29289,234.85
+Hingoli,2021,Flood,182.9,38.1,3.47,90.4,Orange,4090,55.18
+Hingoli,2021,Landslides,345.4,23.5,1.8,48.4,Orange,4923,79.6
+Hingoli,2021,Heatwave,307.1,38.5,4.4,54.5,Orange,2455,201.45
+Hingoli,2021,Drought,397.8,26.2,4.27,44.2,Orange,3902,84.92
+Hingoli,2021,Excessive Rainfall,207.5,36.0,2.06,78.3,Orange,763,60.94
+Hingoli,2022,Earthquake,170.0,32.9,0.84,53.1,Yellow,758,4.3
+Hingoli,2022,Flood,283.3,42.3,0.77,68.9,Orange,2387,167.86
+Hingoli,2022,Landslides,330.4,31.4,2.32,30.5,Orange,3476,174.47
+Hingoli,2022,Heatwave,65.4,30.5,4.41,57.3,Orange,4594,127.98
+Hingoli,2022,Drought,336.9,35.4,3.61,86.2,Orange,2637,116.94
+Hingoli,2022,Excessive Rainfall,204.4,44.2,3.17,35.4,Orange,2662,216.43
+Hingoli,2023,Earthquake,77.5,34.6,1.94,87.1,Yellow,4219,2.44
+Hingoli,2023,Flood,273.1,23.3,4.38,63.3,Orange,2612,76.26
+Hingoli,2023,Landslides,393.1,29.0,0.95,38.4,Orange,4010,77.98
+Hingoli,2023,Heatwave,238.7,27.2,0.83,51.6,Orange,2043,235.28
+Hingoli,2023,Drought,445.2,33.2,0.89,87.9,Orange,3693,117.79
+Hingoli,2023,Excessive Rainfall,443.5,23.2,0.53,76.8,Orange,1329,74.05
+Hingoli,2024,Earthquake,65.7,22.5,3.51,38.7,Red,52412,119.59
+Hingoli,2024,Flood,221.3,22.6,3.55,30.7,Orange,4519,191.66
+Hingoli,2024,Landslides,223.1,34.3,2.2,55.3,Orange,4522,222.42
+Hingoli,2024,Heatwave,184.3,36.1,4.18,92.5,Orange,2537,129.69
+Hingoli,2024,Drought,161.5,44.1,0.73,67.7,Orange,1755,74.22
+Hingoli,2024,Excessive Rainfall,212.0,45.0,0.34,67.6,Orange,1195,25.23
+Hingoli,2025,Earthquake,225.8,33.7,1.24,50.6,Orange,1864,26.31
+Hingoli,2025,Flood,436.6,43.7,1.57,67.1,Red,10432,227.85
+Hingoli,2025,Landslides,374.3,43.8,0.5,40.5,Orange,2918,240.38
+Hingoli,2025,Heatwave,55.7,27.9,2.08,75.0,Orange,4979,184.62
+Hingoli,2025,Drought,165.0,34.4,2.45,56.4,Orange,4898,46.44
+Hingoli,2025,Excessive Rainfall,391.3,33.5,2.75,44.8,Orange,3627,138.23
+Hingoli,2026,Earthquake,256.1,44.8,2.79,54.1,Orange,1267,194.18
+Hingoli,2026,Flood,203.8,30.0,2.0,80.8,Orange,4073,123.62
+Hingoli,2026,Landslides,280.6,29.9,3.66,45.5,Orange,2770,59.97
+Hingoli,2026,Heatwave,154.3,22.2,2.95,63.2,Orange,4851,114.15
+Hingoli,2026,Drought,278.5,41.9,0.71,67.0,Orange,3123,217.66
+Hingoli,2026,Excessive Rainfall,337.2,30.6,0.51,59.8,Orange,4401,101.65
+Nagpur,2021,Earthquake,147.6,44.2,4.32,46.1,Red,72688,90.27
+Nagpur,2021,Flood,436.6,32.2,1.51,64.2,Red,29143,173.5
+Nagpur,2021,Landslides,344.6,23.2,0.32,55.1,Orange,1920,91.6
+Nagpur,2021,Heatwave,246.4,29.4,0.95,50.1,Orange,2350,243.85
+Nagpur,2021,Drought,227.9,35.3,4.43,45.7,Orange,3721,171.91
+Nagpur,2021,Excessive Rainfall,292.9,24.0,3.08,34.2,Orange,3828,151.05
+Nagpur,2022,Earthquake,134.4,41.4,0.23,84.8,Orange,1479,117.78
+Nagpur,2022,Flood,103.5,43.9,0.42,42.9,Orange,3291,90.22
+Nagpur,2022,Landslides,267.9,24.9,1.37,45.5,Orange,2350,57.32
+Nagpur,2022,Heatwave,331.6,27.0,1.71,55.4,Orange,4795,244.23
+Nagpur,2022,Drought,370.1,27.6,0.4,50.6,Orange,2776,70.36
+Nagpur,2022,Excessive Rainfall,361.1,41.7,3.82,53.4,Orange,1907,173.37
+Nagpur,2023,Earthquake,74.4,38.1,0.14,56.6,Orange,3620,85.7
+Nagpur,2023,Flood,356.5,29.0,3.67,49.1,Red,60891,114.35
+Nagpur,2023,Landslides,327.2,44.7,1.09,73.1,Orange,4617,154.37
+Nagpur,2023,Heatwave,112.5,39.3,2.6,47.9,Orange,2001,121.24
+Nagpur,2023,Drought,281.7,42.4,2.6,71.1,Orange,730,132.09
+Nagpur,2023,Excessive Rainfall,143.1,33.3,1.47,41.8,Yellow,1952,5.29
+Nagpur,2024,Earthquake,153.2,32.7,0.69,90.3,Yellow,3684,8.74
+Nagpur,2024,Flood,92.5,39.8,3.66,79.9,Orange,3397,32.92
+Nagpur,2024,Landslides,383.7,35.3,2.94,59.8,Orange,654,134.53
+Nagpur,2024,Heatwave,305.6,23.9,2.01,49.0,Orange,1100,138.63
+Nagpur,2024,Drought,326.7,40.3,0.82,36.8,Orange,4447,40.65
+Nagpur,2024,Excessive Rainfall,261.3,32.7,0.57,72.2,Orange,4226,217.66
+Nagpur,2025,Earthquake,300.4,23.7,0.59,33.2,Orange,1110,68.08
+Nagpur,2025,Flood,154.0,30.9,4.25,69.7,Orange,3696,209.57
+Nagpur,2025,Landslides,95.0,38.9,1.31,71.5,Orange,4989,88.54
+Nagpur,2025,Heatwave,155.4,28.4,4.19,31.6,Orange,3763,175.69
+Nagpur,2025,Drought,384.6,44.4,4.39,34.2,Orange,3408,206.35
+Nagpur,2025,Excessive Rainfall,308.9,25.0,2.96,93.9,Orange,2476,228.4
+Nagpur,2026,Earthquake,66.0,30.3,3.74,75.6,Red,13857,117.54
+Nagpur,2026,Flood,220.8,32.8,4.19,71.7,Orange,2863,81.35
+Nagpur,2026,Landslides,76.4,44.4,1.68,61.1,Orange,3571,92.04
+Nagpur,2026,Heatwave,314.9,38.5,1.28,50.5,Orange,3449,35.69
+Nagpur,2026,Drought,65.9,35.7,3.93,87.9,Orange,2566,115.01
+Nagpur,2026,Excessive Rainfall,80.8,37.4,3.71,45.9,Orange,4274,108.22
+Bhandara,2021,Earthquake,400.8,27.6,2.52,42.5,Orange,4600,29.96
+Bhandara,2021,Flood,378.2,39.5,0.31,84.8,Red,33967,112.32
+Bhandara,2021,Landslides,268.6,24.1,3.43,67.9,Orange,1347,50.71
+Bhandara,2021,Heatwave,123.7,23.3,2.69,84.6,Orange,720,9.29
+Bhandara,2021,Drought,279.1,40.8,1.54,52.7,Orange,1733,151.1
+Bhandara,2021,Excessive Rainfall,60.6,38.9,2.85,67.7,Orange,3538,186.71
+Bhandara,2022,Earthquake,132.4,30.1,0.65,38.4,Yellow,4363,6.92
+Bhandara,2022,Flood,435.1,36.5,0.91,36.9,Red,50512,204.15
+Bhandara,2022,Landslides,297.3,40.0,3.19,84.2,Orange,3863,18.77
+Bhandara,2022,Heatwave,390.3,28.6,2.92,50.4,Orange,650,239.7
+Bhandara,2022,Drought,281.9,25.8,3.23,41.4,Orange,2724,62.67
+Bhandara,2022,Excessive Rainfall,415.9,26.9,0.73,79.3,Orange,4603,127.65
+Bhandara,2023,Earthquake,108.6,36.9,1.12,40.2,Orange,3171,172.44
+Bhandara,2023,Flood,351.9,29.1,2.07,56.4,Red,30457,246.1
+Bhandara,2023,Landslides,167.9,30.2,2.58,46.4,Orange,1695,229.25
+Bhandara,2023,Heatwave,408.3,24.4,2.99,89.0,Orange,4857,46.34
+Bhandara,2023,Drought,231.2,43.8,3.08,49.6,Orange,1866,51.13
+Bhandara,2023,Excessive Rainfall,87.2,25.3,0.56,57.5,Yellow,1136,8.06
+Bhandara,2024,Earthquake,102.1,36.8,0.97,36.3,Orange,4656,45.88
+Bhandara,2024,Flood,378.6,30.1,2.99,64.9,Red,57786,170.9
+Bhandara,2024,Landslides,301.5,28.1,0.27,59.6,Orange,3062,223.29
+Bhandara,2024,Heatwave,383.0,44.8,0.82,75.0,Red,78596,170.2
+Bhandara,2024,Drought,444.2,37.8,1.17,81.9,Orange,4013,31.22
+Bhandara,2024,Excessive Rainfall,414.1,30.8,2.87,58.0,Orange,1896,112.25
+Bhandara,2025,Earthquake,354.9,43.5,4.24,41.4,Red,61620,219.31
+Bhandara,2025,Flood,151.1,23.5,1.28,89.3,Yellow,3744,6.52
+Bhandara,2025,Landslides,152.9,38.5,0.22,54.4,Orange,1157,158.55
+Bhandara,2025,Heatwave,379.2,27.4,2.97,56.3,Orange,983,151.03
+Bhandara,2025,Drought,56.8,42.9,1.29,83.3,Orange,1451,249.84
+Bhandara,2025,Excessive Rainfall,156.1,37.2,4.35,89.5,Orange,4077,128.2
+Bhandara,2026,Earthquake,104.3,44.5,4.34,40.6,Red,17010,78.36
+Bhandara,2026,Flood,158.7,40.8,1.76,35.7,Orange,4916,88.85
+Bhandara,2026,Landslides,301.9,31.6,0.83,94.1,Orange,1766,206.11
+Bhandara,2026,Heatwave,78.0,23.3,0.63,67.7,Yellow,2735,9.32
+Bhandara,2026,Drought,387.2,32.3,3.22,77.6,Orange,2125,47.62
+Bhandara,2026,Excessive Rainfall,304.9,23.6,1.69,64.8,Orange,2635,249.08
+Gondia,2021,Earthquake,376.4,31.9,3.6,68.7,Red,38765,222.22
+Gondia,2021,Flood,291.7,36.5,1.94,39.4,Orange,575,27.92
+Gondia,2021,Landslides,399.4,27.4,1.03,77.8,Orange,2777,83.4
+Gondia,2021,Heatwave,115.0,44.1,3.85,86.1,Red,63365,104.66
+Gondia,2021,Drought,107.6,22.2,0.19,68.1,Yellow,2831,4.83
+Gondia,2021,Excessive Rainfall,53.0,31.7,3.26,58.8,Orange,1548,184.39
+Gondia,2022,Earthquake,375.3,35.5,1.03,45.4,Orange,4234,158.87
+Gondia,2022,Flood,216.3,27.9,3.91,73.5,Orange,2695,114.78
+Gondia,2022,Landslides,131.7,36.4,1.68,94.7,Orange,2686,122.64
+Gondia,2022,Heatwave,276.3,43.1,3.62,59.3,Red,51036,181.08
+Gondia,2022,Drought,246.9,26.4,2.14,46.0,Orange,2009,229.14
+Gondia,2022,Excessive Rainfall,430.9,34.3,2.88,65.3,Orange,2191,36.7
+Gondia,2023,Earthquake,89.7,36.3,2.07,80.6,Orange,1240,59.02
+Gondia,2023,Flood,212.5,43.3,3.23,57.2,Orange,878,131.73
+Gondia,2023,Landslides,443.8,37.3,1.36,68.1,Orange,4846,31.82
+Gondia,2023,Heatwave,119.9,36.9,1.18,76.6,Orange,3530,195.32
+Gondia,2023,Drought,295.8,42.5,0.45,51.5,Orange,4946,65.83
+Gondia,2023,Excessive Rainfall,205.8,38.9,3.11,43.8,Orange,1765,63.55
+Gondia,2024,Earthquake,214.5,27.4,0.19,87.2,Orange,2037,241.57
+Gondia,2024,Flood,185.4,22.2,3.09,83.7,Orange,1218,40.92
+Gondia,2024,Landslides,366.0,36.2,0.3,70.5,Orange,2159,80.68
+Gondia,2024,Heatwave,357.9,40.7,1.86,91.6,Red,64028,104.58
+Gondia,2024,Drought,243.6,42.6,4.09,35.7,Orange,4214,234.44
+Gondia,2024,Excessive Rainfall,366.5,26.6,3.64,85.3,Orange,4785,75.84
+Gondia,2025,Earthquake,69.9,25.4,2.47,67.4,Orange,576,163.06
+Gondia,2025,Flood,434.1,23.0,0.73,30.9,Red,75258,143.88
+Gondia,2025,Landslides,316.4,40.9,0.16,65.2,Orange,2745,117.59
+Gondia,2025,Heatwave,78.9,37.7,2.31,79.7,Orange,1172,123.9
+Gondia,2025,Drought,309.3,26.0,3.94,69.9,Orange,4830,43.51
+Gondia,2025,Excessive Rainfall,257.3,23.7,2.86,46.5,Orange,4180,201.9
+Gondia,2026,Earthquake,441.6,33.5,2.1,79.0,Orange,2961,37.46
+Gondia,2026,Flood,268.5,24.1,1.94,85.5,Orange,946,214.76
+Gondia,2026,Landslides,86.3,28.0,3.95,38.4,Orange,955,181.4
+Gondia,2026,Heatwave,299.3,30.2,3.57,45.2,Orange,1560,161.6
+Gondia,2026,Drought,335.5,42.1,0.66,86.3,Orange,1071,150.43
+Gondia,2026,Excessive Rainfall,221.0,25.7,3.18,79.3,Orange,2777,30.92
+Wardha,2021,Earthquake,375.9,43.5,2.36,91.8,Orange,2273,136.24
+Wardha,2021,Flood,389.3,33.3,2.18,61.9,Red,68235,212.46
+Wardha,2021,Landslides,211.4,29.7,2.26,67.2,Orange,4072,63.39
+Wardha,2021,Heatwave,244.6,29.7,0.57,45.5,Orange,1872,237.57
+Wardha,2021,Drought,117.5,32.6,1.45,32.3,Yellow,2948,3.57
+Wardha,2021,Excessive Rainfall,270.7,30.2,2.07,92.8,Orange,1662,97.45
+Wardha,2022,Earthquake,147.4,32.5,3.44,43.4,Red,11480,178.78
+Wardha,2022,Flood,217.6,39.8,1.59,66.6,Orange,3838,55.22
+Wardha,2022,Landslides,70.9,41.6,0.97,86.8,Orange,3752,91.37
+Wardha,2022,Heatwave,177.7,42.8,0.66,41.6,Red,15735,125.79
+Wardha,2022,Drought,128.4,43.7,4.4,54.5,Orange,2951,231.21
+Wardha,2022,Excessive Rainfall,157.9,38.2,3.0,94.3,Orange,3524,69.94
+Wardha,2023,Earthquake,70.8,24.6,0.12,95.0,Yellow,4040,8.12
+Wardha,2023,Flood,253.9,28.9,0.77,48.5,Orange,3903,97.11
+Wardha,2023,Landslides,265.9,23.8,0.18,36.7,Orange,4699,105.57
+Wardha,2023,Heatwave,305.0,40.4,2.15,53.5,Red,71315,31.56
+Wardha,2023,Drought,363.3,25.9,2.35,61.7,Orange,4757,158.15
+Wardha,2023,Excessive Rainfall,281.9,34.4,0.32,34.1,Orange,646,50.9
+Wardha,2024,Earthquake,347.3,38.6,0.7,84.3,Orange,1855,42.92
+Wardha,2024,Flood,149.6,30.6,1.22,61.8,Yellow,4939,4.37
+Wardha,2024,Landslides,72.4,25.3,0.33,70.7,Yellow,4263,1.02
+Wardha,2024,Heatwave,254.8,34.1,2.57,41.1,Orange,1934,53.43
+Wardha,2024,Drought,287.4,26.8,0.61,93.1,Orange,4112,10.39
+Wardha,2024,Excessive Rainfall,365.2,28.8,0.7,39.5,Orange,3392,175.87
+Wardha,2025,Earthquake,363.1,43.6,3.14,40.1,Red,68953,64.64
+Wardha,2025,Flood,133.7,23.7,3.19,56.2,Orange,3426,230.41
+Wardha,2025,Landslides,86.2,43.8,1.24,51.9,Orange,730,103.55
+Wardha,2025,Heatwave,248.6,24.8,1.86,52.8,Orange,4114,194.35
+Wardha,2025,Drought,111.4,30.4,1.74,39.8,Yellow,3682,8.09
+Wardha,2025,Excessive Rainfall,126.2,30.4,0.57,70.8,Yellow,4936,1.65
+Wardha,2026,Earthquake,362.3,31.0,2.65,89.2,Orange,1285,140.75
+Wardha,2026,Flood,201.5,41.4,2.93,72.3,Orange,4522,217.37
+Wardha,2026,Landslides,417.9,24.2,2.49,78.1,Orange,3230,190.45
+Wardha,2026,Heatwave,116.7,40.3,3.27,35.6,Red,22178,118.63
+Wardha,2026,Drought,185.0,22.4,1.86,65.7,Yellow,3485,6.39
+Wardha,2026,Excessive Rainfall,384.5,27.0,0.63,85.3,Orange,4886,43.37
+Chandrapur,2021,Earthquake,387.0,33.5,4.42,36.3,Red,54675,79.25
+Chandrapur,2021,Flood,190.0,43.4,0.39,65.7,Orange,3437,149.76
+Chandrapur,2021,Landslides,152.3,30.4,3.81,42.7,Orange,3031,207.58
+Chandrapur,2021,Heatwave,354.9,38.4,1.01,67.0,Orange,2444,217.59
+Chandrapur,2021,Drought,436.6,32.4,0.73,55.3,Orange,1938,238.17
+Chandrapur,2021,Excessive Rainfall,397.2,42.3,1.64,35.4,Orange,1901,182.52
+Chandrapur,2022,Earthquake,363.2,32.2,2.24,80.6,Orange,2494,98.68
+Chandrapur,2022,Flood,200.5,30.4,2.41,82.6,Orange,2859,93.63
+Chandrapur,2022,Landslides,318.3,28.2,1.32,90.7,Orange,3097,182.27
+Chandrapur,2022,Heatwave,309.1,22.7,2.82,63.1,Orange,2117,138.71
+Chandrapur,2022,Drought,82.6,26.4,4.28,56.6,Orange,737,119.34
+Chandrapur,2022,Excessive Rainfall,65.0,38.5,2.47,63.1,Orange,3851,64.57
+Chandrapur,2023,Earthquake,117.3,26.4,2.13,48.6,Orange,3403,65.63
+Chandrapur,2023,Flood,310.4,41.0,1.94,34.8,Red,78600,72.05
+Chandrapur,2023,Landslides,288.5,38.3,0.13,63.7,Orange,3061,14.19
+Chandrapur,2023,Heatwave,418.3,44.3,2.48,59.8,Red,57152,236.53
+Chandrapur,2023,Drought,76.0,32.7,1.16,60.5,Orange,3119,116.59
+Chandrapur,2023,Excessive Rainfall,192.7,25.8,2.32,84.0,Orange,2022,167.68
+Chandrapur,2024,Earthquake,424.2,43.0,1.02,32.6,Orange,4224,186.62
+Chandrapur,2024,Flood,437.1,42.5,2.74,64.5,Red,27265,11.82
+Chandrapur,2024,Landslides,233.8,36.5,2.55,78.3,Orange,3042,73.54
+Chandrapur,2024,Heatwave,85.3,31.5,3.4,75.1,Orange,1750,247.71
+Chandrapur,2024,Drought,249.3,29.6,2.04,85.7,Orange,4470,172.63
+Chandrapur,2024,Excessive Rainfall,131.4,42.1,0.36,87.8,Orange,1915,85.62
+Chandrapur,2025,Earthquake,254.8,43.6,0.31,52.9,Orange,2282,214.86
+Chandrapur,2025,Flood,129.7,31.8,1.8,89.5,Yellow,2773,7.74
+Chandrapur,2025,Landslides,445.3,32.7,0.36,47.0,Orange,1206,111.84
+Chandrapur,2025,Heatwave,429.0,39.6,1.28,68.4,Orange,4735,181.76
+Chandrapur,2025,Drought,402.7,33.8,3.51,66.5,Orange,1016,140.41
+Chandrapur,2025,Excessive Rainfall,100.5,34.2,1.28,31.4,Yellow,646,7.37
+Chandrapur,2026,Earthquake,288.1,34.4,4.36,61.5,Red,48618,20.58
+Chandrapur,2026,Flood,386.4,44.9,1.99,50.8,Red,23386,227.13
+Chandrapur,2026,Landslides,296.2,31.3,0.28,52.6,Orange,3587,69.98
+Chandrapur,2026,Heatwave,429.5,28.2,3.67,33.6,Orange,817,136.84
+Chandrapur,2026,Drought,423.6,39.6,2.99,83.6,Orange,4860,163.64
+Chandrapur,2026,Excessive Rainfall,335.6,43.3,2.38,37.6,Orange,1070,134.4
+Gadchiroli,2021,Earthquake,287.0,33.1,2.84,30.7,Orange,2710,52.74
+Gadchiroli,2021,Flood,430.2,30.8,1.97,76.5,Red,30924,152.93
+Gadchiroli,2021,Landslides,214.3,27.0,4.35,38.5,Orange,616,96.1
+Gadchiroli,2021,Heatwave,138.7,40.0,0.99,35.2,Orange,544,121.24
+Gadchiroli,2021,Drought,83.9,40.6,3.49,89.5,Orange,3574,214.36
+Gadchiroli,2021,Excessive Rainfall,70.9,40.0,3.82,81.9,Orange,1548,129.58
+Gadchiroli,2022,Earthquake,388.1,38.7,4.42,40.1,Red,24825,60.29
+Gadchiroli,2022,Flood,367.0,26.3,0.39,94.9,Red,68467,11.08
+Gadchiroli,2022,Landslides,196.1,41.4,2.54,88.6,Orange,540,231.92
+Gadchiroli,2022,Heatwave,80.2,27.8,3.04,87.7,Orange,3231,117.69
+Gadchiroli,2022,Drought,125.4,40.5,4.36,47.5,Orange,887,126.23
+Gadchiroli,2022,Excessive Rainfall,273.7,33.6,0.74,58.7,Orange,2848,86.86
+Gadchiroli,2023,Earthquake,284.3,22.2,3.45,76.3,Red,13705,94.74
+Gadchiroli,2023,Flood,352.0,44.0,1.16,51.0,Red,50385,50.03
+Gadchiroli,2023,Landslides,111.9,30.2,3.17,66.4,Orange,2391,99.68
+Gadchiroli,2023,Heatwave,274.8,22.1,0.45,87.3,Orange,3680,24.08
+Gadchiroli,2023,Drought,418.0,28.2,1.73,67.0,Orange,4738,221.02
+Gadchiroli,2023,Excessive Rainfall,345.8,24.0,3.04,56.7,Orange,721,120.32
+Gadchiroli,2024,Earthquake,126.4,40.2,2.1,49.6,Orange,4344,99.08
+Gadchiroli,2024,Flood,349.6,28.3,0.62,46.4,Red,50711,230.59
+Gadchiroli,2024,Landslides,263.4,35.7,1.71,82.5,Orange,1025,133.21
+Gadchiroli,2024,Heatwave,101.6,34.3,4.22,50.0,Orange,3938,218.04
+Gadchiroli,2024,Drought,149.1,22.8,0.55,77.4,Yellow,2170,2.4
+Gadchiroli,2024,Excessive Rainfall,250.7,38.7,0.6,56.4,Orange,2933,123.84
+Gadchiroli,2025,Earthquake,377.3,25.9,3.65,75.0,Red,58966,141.19
+Gadchiroli,2025,Flood,214.8,25.2,3.03,64.1,Orange,2020,161.65
+Gadchiroli,2025,Landslides,412.7,35.5,0.48,59.2,Orange,4073,190.31
+Gadchiroli,2025,Heatwave,247.8,42.6,1.28,56.7,Red,72737,225.16
+Gadchiroli,2025,Drought,324.3,41.8,0.49,86.2,Orange,1302,83.55
+Gadchiroli,2025,Excessive Rainfall,145.7,31.6,1.21,50.8,Yellow,1832,1.78
+Gadchiroli,2026,Earthquake,278.9,32.2,1.63,78.5,Orange,3905,223.91
+Gadchiroli,2026,Flood,182.8,39.1,0.77,38.5,Orange,4134,89.68
+Gadchiroli,2026,Landslides,148.5,23.5,0.68,85.8,Yellow,1639,6.52
+Gadchiroli,2026,Heatwave,272.1,34.1,2.98,45.2,Orange,1892,216.78
+Gadchiroli,2026,Drought,327.7,22.4,1.74,52.9,Orange,827,138.15
+Gadchiroli,2026,Excessive Rainfall,366.1,27.0,3.08,82.2,Orange,3833,142.66
+Amravati,2021,Earthquake,314.7,30.2,3.66,49.2,Red,62177,144.95
+Amravati,2021,Flood,201.6,29.0,2.12,83.2,Orange,2952,232.83
+Amravati,2021,Landslides,314.6,42.8,0.53,45.1,Orange,4206,178.68
+Amravati,2021,Heatwave,392.8,31.5,0.49,58.5,Orange,1810,61.53
+Amravati,2021,Drought,358.9,23.7,3.74,57.8,Orange,903,151.04
+Amravati,2021,Excessive Rainfall,184.9,24.1,4.33,82.5,Orange,1506,117.61
+Amravati,2022,Earthquake,423.4,29.9,0.81,66.6,Orange,517,236.22
+Amravati,2022,Flood,145.2,43.6,0.85,37.4,Orange,4378,144.7
+Amravati,2022,Landslides,240.8,44.9,3.09,34.8,Orange,2335,248.24
+Amravati,2022,Heatwave,165.0,34.8,1.44,35.6,Yellow,2523,0.51
+Amravati,2022,Drought,384.7,35.2,4.5,48.6,Orange,1218,73.71
+Amravati,2022,Excessive Rainfall,115.6,28.6,3.59,88.9,Orange,1545,243.9
+Amravati,2023,Earthquake,402.5,29.5,0.6,86.6,Orange,1241,160.85
+Amravati,2023,Flood,221.9,28.6,3.34,59.5,Orange,746,247.37
+Amravati,2023,Landslides,192.0,33.1,2.31,50.5,Orange,4436,183.66
+Amravati,2023,Heatwave,425.5,40.5,3.84,65.8,Red,31245,207.34
+Amravati,2023,Drought,209.4,29.3,2.16,48.6,Orange,1907,240.59
+Amravati,2023,Excessive Rainfall,89.2,34.1,0.35,37.2,Yellow,2589,2.58
+Amravati,2024,Earthquake,223.3,40.4,3.35,57.7,Red,32152,86.76
+Amravati,2024,Flood,359.6,23.2,0.16,81.7,Red,19161,121.9
+Amravati,2024,Landslides,144.2,43.4,3.88,76.1,Orange,2841,123.15
+Amravati,2024,Heatwave,440.1,44.2,1.05,82.7,Red,24947,53.32
+Amravati,2024,Drought,320.4,31.3,4.2,35.8,Orange,4633,130.32
+Amravati,2024,Excessive Rainfall,411.6,25.6,1.71,70.2,Orange,4856,44.05
+Amravati,2025,Earthquake,415.9,25.8,0.63,35.6,Orange,1371,227.81
+Amravati,2025,Flood,216.5,32.3,2.74,34.7,Orange,4691,60.56
+Amravati,2025,Landslides,413.4,40.0,0.19,51.3,Orange,1738,158.85
+Amravati,2025,Heatwave,413.8,36.6,0.42,89.1,Orange,849,239.65
+Amravati,2025,Drought,262.9,29.0,1.83,41.7,Orange,4810,146.63
+Amravati,2025,Excessive Rainfall,251.2,23.9,2.83,52.1,Orange,2456,214.7
+Amravati,2026,Earthquake,127.1,26.4,3.48,47.3,Red,24412,192.97
+Amravati,2026,Flood,178.7,32.7,4.25,90.6,Orange,2111,55.68
+Amravati,2026,Landslides,109.8,33.7,2.13,88.5,Orange,2226,232.85
+Amravati,2026,Heatwave,246.7,42.6,3.65,30.2,Red,39524,83.41
+Amravati,2026,Drought,141.9,26.6,0.27,71.8,Yellow,735,2.99
+Amravati,2026,Excessive Rainfall,142.4,40.4,3.85,61.4,Orange,4900,106.94
+Akola,2021,Earthquake,130.2,27.0,1.38,41.2,Yellow,4598,4.1
+Akola,2021,Flood,296.1,31.5,4.21,33.2,Orange,3046,56.52
+Akola,2021,Landslides,296.2,22.9,1.87,72.2,Orange,3371,176.03
+Akola,2021,Heatwave,178.2,24.2,1.98,38.4,Yellow,2638,9.5
+Akola,2021,Drought,176.9,39.6,2.29,50.2,Orange,4402,203.93
+Akola,2021,Excessive Rainfall,319.2,23.1,2.59,79.6,Orange,1529,38.44
+Akola,2022,Earthquake,403.0,22.5,3.41,60.8,Red,10496,114.46
+Akola,2022,Flood,377.8,30.3,2.48,74.0,Red,76918,177.14
+Akola,2022,Landslides,262.5,31.2,4.3,71.7,Orange,1069,78.05
+Akola,2022,Heatwave,387.0,30.3,3.01,60.6,Orange,3207,53.74
+Akola,2022,Drought,74.3,31.5,2.51,58.3,Orange,4225,188.42
+Akola,2022,Excessive Rainfall,358.5,22.9,0.95,64.9,Orange,4257,234.03
+Akola,2023,Earthquake,387.0,29.0,1.99,60.6,Orange,639,43.56
+Akola,2023,Flood,428.8,27.5,1.16,35.4,Red,50581,232.48
+Akola,2023,Landslides,316.8,43.0,1.62,70.4,Orange,1340,14.51
+Akola,2023,Heatwave,382.5,39.6,1.64,54.5,Orange,501,135.72
+Akola,2023,Drought,146.5,26.8,1.2,82.4,Yellow,1361,3.16
+Akola,2023,Excessive Rainfall,251.7,41.9,1.16,35.1,Orange,3864,92.32
+Akola,2024,Earthquake,270.3,40.8,4.32,81.5,Red,44533,152.93
+Akola,2024,Flood,66.0,44.6,1.79,39.9,Orange,1779,168.34
+Akola,2024,Landslides,284.3,35.5,2.06,84.3,Orange,2518,69.92
+Akola,2024,Heatwave,265.1,37.3,3.55,55.7,Orange,1177,163.28
+Akola,2024,Drought,423.1,30.8,3.31,31.3,Orange,2691,55.27
+Akola,2024,Excessive Rainfall,401.3,34.1,4.19,61.4,Orange,1038,125.16
+Akola,2025,Earthquake,371.1,27.7,4.06,89.2,Red,46416,236.11
+Akola,2025,Flood,320.8,39.9,0.68,69.1,Red,44829,13.4
+Akola,2025,Landslides,111.9,26.2,1.71,58.1,Yellow,834,6.42
+Akola,2025,Heatwave,251.5,26.2,2.63,71.4,Orange,3822,141.39
+Akola,2025,Drought,184.2,39.6,2.0,61.5,Orange,582,163.79
+Akola,2025,Excessive Rainfall,311.6,36.2,1.46,35.6,Orange,4654,27.28
+Akola,2026,Earthquake,325.7,24.9,1.67,68.5,Orange,696,209.72
+Akola,2026,Flood,144.7,42.5,0.14,43.1,Orange,3260,239.96
+Akola,2026,Landslides,154.7,23.5,0.22,45.9,Yellow,2371,8.87
+Akola,2026,Heatwave,338.1,43.1,1.9,42.4,Red,73565,131.69
+Akola,2026,Drought,371.7,23.5,3.15,67.2,Orange,1051,227.33
+Akola,2026,Excessive Rainfall,263.6,42.2,1.9,61.3,Orange,1751,22.26
+Yavatmal,2021,Earthquake,179.8,43.7,1.34,60.0,Orange,1229,169.47
+Yavatmal,2021,Flood,244.6,39.0,3.91,70.7,Orange,1068,168.92
+Yavatmal,2021,Landslides,428.3,25.0,3.51,47.2,Orange,3739,233.73
+Yavatmal,2021,Heatwave,351.5,27.0,2.05,70.2,Orange,967,193.64
+Yavatmal,2021,Drought,434.9,42.5,1.29,83.5,Orange,2578,131.99
+Yavatmal,2021,Excessive Rainfall,175.8,35.4,3.31,56.7,Orange,3646,159.16
+Yavatmal,2022,Earthquake,334.4,23.2,3.88,59.8,Red,26923,69.29
+Yavatmal,2022,Flood,243.2,42.4,1.76,78.7,Orange,2642,28.72
+Yavatmal,2022,Landslides,446.7,39.7,1.03,62.6,Orange,2343,62.24
+Yavatmal,2022,Heatwave,362.0,39.7,1.1,89.9,Orange,2209,150.18
+Yavatmal,2022,Drought,250.8,35.9,2.56,61.6,Orange,1293,128.71
+Yavatmal,2022,Excessive Rainfall,375.1,34.5,0.68,79.8,Orange,4762,233.45
+Yavatmal,2023,Earthquake,197.6,25.1,2.38,37.3,Orange,1326,233.83
+Yavatmal,2023,Flood,151.1,31.4,1.79,81.7,Yellow,1268,4.84
+Yavatmal,2023,Landslides,156.9,33.7,0.75,69.8,Yellow,3716,5.87
+Yavatmal,2023,Heatwave,425.1,43.0,4.26,45.9,Red,31159,37.23
+Yavatmal,2023,Drought,408.0,44.4,3.88,37.2,Orange,2405,237.12
+Yavatmal,2023,Excessive Rainfall,53.7,32.2,0.3,65.4,Yellow,2630,3.72
+Yavatmal,2024,Earthquake,295.3,42.0,3.01,58.2,Red,73390,205.76
+Yavatmal,2024,Flood,97.9,34.2,1.35,33.1,Yellow,4382,6.85
+Yavatmal,2024,Landslides,115.2,40.7,3.85,89.4,Orange,4567,69.99
+Yavatmal,2024,Heatwave,178.3,34.7,0.32,32.9,Yellow,2500,7.34
+Yavatmal,2024,Drought,152.5,26.4,3.05,30.0,Orange,856,202.44
+Yavatmal,2024,Excessive Rainfall,126.6,30.9,2.23,53.1,Orange,4837,83.57
+Yavatmal,2025,Earthquake,306.6,22.5,1.99,86.9,Orange,925,78.86
+Yavatmal,2025,Flood,353.4,35.9,2.61,33.5,Red,53578,39.42
+Yavatmal,2025,Landslides,133.1,33.6,2.5,48.4,Orange,4291,237.36
+Yavatmal,2025,Heatwave,338.9,23.8,0.57,62.0,Orange,4902,44.37
+Yavatmal,2025,Drought,113.4,33.2,1.7,71.6,Yellow,2436,1.73
+Yavatmal,2025,Excessive Rainfall,159.9,42.4,0.28,89.4,Orange,1839,209.08
+Yavatmal,2026,Earthquake,365.7,22.7,4.35,64.2,Red,35380,79.3
+Yavatmal,2026,Flood,76.6,44.8,0.27,72.6,Orange,4770,113.47
+Yavatmal,2026,Landslides,148.4,34.2,2.22,75.7,Orange,1372,21.66
+Yavatmal,2026,Heatwave,135.8,39.0,0.93,67.3,Orange,4377,57.73
+Yavatmal,2026,Drought,426.9,33.9,1.65,45.2,Orange,1708,17.2
+Yavatmal,2026,Excessive Rainfall,311.7,34.3,4.25,55.8,Orange,2701,175.0
+Buldhana,2021,Earthquake,255.0,28.2,2.1,60.6,Orange,4732,178.13
+Buldhana,2021,Flood,181.7,23.0,2.28,65.4,Orange,3922,46.27
+Buldhana,2021,Landslides,444.0,43.8,0.97,86.9,Orange,2542,177.6
+Buldhana,2021,Heatwave,266.2,41.5,2.21,54.3,Red,50539,125.85
+Buldhana,2021,Drought,125.6,42.7,3.07,71.2,Orange,3218,29.38
+Buldhana,2021,Excessive Rainfall,98.4,23.8,2.42,56.2,Orange,901,149.26
+Buldhana,2022,Earthquake,222.4,26.0,4.44,66.5,Red,32779,173.42
+Buldhana,2022,Flood,87.9,44.4,1.36,57.5,Orange,611,164.22
+Buldhana,2022,Landslides,374.1,34.3,1.32,34.0,Orange,4527,44.81
+Buldhana,2022,Heatwave,324.4,27.7,0.39,74.9,Orange,2320,145.24
+Buldhana,2022,Drought,195.4,27.0,3.05,93.1,Orange,3187,48.05
+Buldhana,2022,Excessive Rainfall,219.7,32.3,1.22,83.6,Orange,2945,123.89
+Buldhana,2023,Earthquake,171.9,26.2,0.48,76.4,Yellow,3605,2.36
+Buldhana,2023,Flood,206.2,31.6,2.16,53.9,Orange,1893,29.65
+Buldhana,2023,Landslides,315.5,37.3,1.36,59.9,Orange,1446,52.39
+Buldhana,2023,Heatwave,59.2,42.6,1.03,44.8,Red,18918,73.5
+Buldhana,2023,Drought,305.7,23.7,0.69,71.9,Orange,3685,88.22
+Buldhana,2023,Excessive Rainfall,273.0,27.9,2.96,37.6,Orange,2467,136.42
+Buldhana,2024,Earthquake,157.1,35.9,3.93,94.9,Red,38329,153.9
+Buldhana,2024,Flood,140.1,27.9,2.21,53.9,Orange,2157,228.88
+Buldhana,2024,Landslides,199.4,30.8,3.78,72.3,Orange,2003,155.47
+Buldhana,2024,Heatwave,377.2,22.9,3.93,63.3,Orange,2737,102.57
+Buldhana,2024,Drought,317.0,22.3,3.93,59.0,Orange,1122,89.03
+Buldhana,2024,Excessive Rainfall,225.8,33.4,1.88,74.1,Orange,4826,108.12
+Buldhana,2025,Earthquake,289.7,40.6,0.58,55.8,Orange,3062,87.53
+Buldhana,2025,Flood,394.4,23.8,0.42,85.3,Red,56812,57.15
+Buldhana,2025,Landslides,267.2,41.2,0.65,38.4,Orange,4758,141.42
+Buldhana,2025,Heatwave,216.0,29.5,2.77,90.5,Orange,4979,210.05
+Buldhana,2025,Drought,59.0,24.6,2.78,83.3,Orange,1576,74.88
+Buldhana,2025,Excessive Rainfall,364.8,23.3,1.73,62.9,Orange,3778,142.29
+Buldhana,2026,Earthquake,191.9,36.1,2.68,65.6,Orange,1667,161.92
+Buldhana,2026,Flood,83.9,24.7,1.09,62.5,Yellow,3655,8.48
+Buldhana,2026,Landslides,365.6,30.1,1.88,55.6,Orange,775,52.01
+Buldhana,2026,Heatwave,286.4,44.8,0.83,33.0,Red,27681,195.99
+Buldhana,2026,Drought,381.9,38.2,4.26,56.6,Orange,2591,167.18
+Buldhana,2026,Excessive Rainfall,302.2,32.3,0.93,63.0,Orange,4147,134.5
+Washim,2021,Earthquake,344.2,37.3,0.6,76.8,Orange,4523,127.57
+Washim,2021,Flood,417.9,23.3,3.71,32.5,Red,47960,94.96
+Washim,2021,Landslides,109.2,39.2,0.14,41.0,Orange,3714,147.3
+Washim,2021,Heatwave,416.7,38.2,3.06,55.6,Orange,1040,5.31
+Washim,2021,Drought,263.8,37.5,1.94,77.5,Orange,833,132.86
+Washim,2021,Excessive Rainfall,126.8,41.3,3.29,88.2,Orange,4956,33.8
+Washim,2022,Earthquake,133.8,22.3,4.49,48.3,Red,22367,168.66
+Washim,2022,Flood,282.1,42.8,1.51,73.6,Orange,3311,51.04
+Washim,2022,Landslides,184.6,26.9,1.48,41.6,Yellow,2287,9.07
+Washim,2022,Heatwave,148.1,32.3,1.51,78.4,Yellow,2471,9.73
+Washim,2022,Drought,394.4,35.0,0.79,74.9,Orange,3427,130.79
+Washim,2022,Excessive Rainfall,405.9,32.1,4.07,78.8,Orange,3214,124.71
+Washim,2023,Earthquake,180.2,44.6,3.04,32.9,Red,53632,85.02
+Washim,2023,Flood,72.5,22.5,2.08,51.6,Orange,1682,112.38
+Washim,2023,Landslides,115.9,37.9,2.36,43.0,Orange,3163,83.3
+Washim,2023,Heatwave,78.9,25.4,0.42,82.8,Yellow,3889,7.65
+Washim,2023,Drought,336.5,37.4,2.2,71.7,Orange,3296,14.4
+Washim,2023,Excessive Rainfall,361.2,33.5,1.67,48.0,Orange,3617,162.49
+Washim,2024,Earthquake,398.4,29.9,3.49,66.5,Red,46946,221.29
+Washim,2024,Flood,257.1,35.3,3.4,92.7,Orange,740,23.02
+Washim,2024,Landslides,425.0,34.2,2.81,61.4,Orange,3956,27.95
+Washim,2024,Heatwave,348.9,29.2,1.45,84.5,Orange,4464,22.73
+Washim,2024,Drought,152.7,35.6,4.22,74.1,Orange,3602,106.54
+Washim,2024,Excessive Rainfall,187.6,28.4,4.49,78.8,Orange,2098,162.96
+Washim,2025,Earthquake,69.7,22.7,2.54,79.5,Orange,4283,136.66
+Washim,2025,Flood,63.4,30.4,1.14,59.1,Yellow,4793,1.19
+Washim,2025,Landslides,139.3,43.2,1.97,94.1,Orange,4688,140.74
+Washim,2025,Heatwave,52.1,39.2,4.07,39.1,Orange,2410,28.55
+Washim,2025,Drought,423.5,34.5,2.42,39.2,Orange,4145,5.19
+Washim,2025,Excessive Rainfall,85.0,36.6,4.12,43.6,Orange,854,167.99
+Washim,2026,Earthquake,291.5,25.8,3.34,49.6,Red,51960,118.53
+Washim,2026,Flood,118.5,39.1,1.43,73.1,Orange,3596,43.78
+Washim,2026,Landslides,101.3,31.8,1.19,78.6,Yellow,4467,2.99
+Washim,2026,Heatwave,406.7,26.5,2.8,35.7,Orange,3709,100.93
+Washim,2026,Drought,313.8,36.4,1.34,54.6,Orange,3735,30.22
+Washim,2026,Excessive Rainfall,251.6,38.3,1.2,51.1,Orange,615,86.88

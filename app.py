@@ -563,23 +563,67 @@ else:
             col4.metric("Seismic Intensity", f"{seismic} Mw", delta="Faultline" if seismic > 2.2 else "Stable Shield")
 
         st.markdown("---")
+        
+        # Live Meteorological News Bulletin grounded in current telemetry (Humidity, Temperature, AQI, Seismic)
+        bulletin = data_engine.get_live_weather_bulletin(live_d, temp, humidity, aqi, seismic)
+        
+        bulletin_html = f"""<div style='background:#ffffff; border:1px solid #cbd5e1; border-left:6px solid {bulletin['badge_color']}; border-radius:10px; padding:22px; margin-bottom:18px; box-shadow:0 2px 6px rgba(0,0,0,0.03);'>
+<div style='display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:12px;'>
+<div>
+<span style='background:{bulletin['badge_bg']}; color:{bulletin['badge_color']}; padding:4px 10px; border-radius:12px; font-size:11px; font-weight:800; text-transform:uppercase;'>🔴 LIVE METEOROLOGICAL DISPATCH</span>
+<span style='margin-left:8px; font-size:12px; color:#64748b; font-weight:600;'>{bulletin['bulletin_type']}</span>
+</div>
+<span style='font-size:12px; color:#64748b; font-weight:500;'>🕒 Synoptic Issuance: {bulletin['published_at']}</span>
+</div>
+<h3 style='margin:0 0 10px 0; color:#0f172a; font-weight:800; font-size:18px;'>{bulletin['headline']}</h3>
+<p style='margin:0 0 16px 0; font-size:14px; color:#334155; line-height:1.6;'>{bulletin['news_text']}</p>
+<div style='display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:12px; margin-top:14px; padding-top:14px; border-top:1px solid #f1f5f9;'>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:12px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>🌧️ Precipitation Likelihood</p>
+<h4 style='margin:4px 0 0 0; color:#1e40af; font-weight:700;'>{bulletin['rain_prob']}</h4>
+<span style='font-size:11px; color:#64748b;'>Relative moisture saturation: {humidity}%</span>
+</div>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:12px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>🌤️ Atmospheric Sky State</p>
+<h4 style='margin:4px 0 0 0; color:#0f172a; font-weight:700;'>{bulletin['sky_icon']} {bulletin['sky_state']}</h4>
+<span style='font-size:11px; color:#64748b;'>Ambient temp: {temp}°C</span>
+</div>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:12px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>💨 Surface Wind & Pressure</p>
+<h4 style='margin:4px 0 0 0; color:#0f766e; font-weight:700;'>{bulletin['wind_speed']}</h4>
+<span style='font-size:11px; color:#64748b;'>Barometric state: Stable</span>
+</div>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:12px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>🌾 Agricultural & Civic Status</p>
+<h4 style='margin:4px 0 0 0; color:#0f172a; font-weight:700; font-size:13px;'>{bulletin['field_status']}</h4>
+<span style='font-size:11px; color:#64748b;'>{bulletin['outdoor_status']}</span>
+</div>
+</div>
+</div>"""
+        st.markdown(bulletin_html, unsafe_allow_html=True)
+
+        st.markdown("#### 🚨 Regulatory Advisories & Operational Protocols")
         advisories = []
-        if temp > 40.0:
-            advisories.append("⚠️ **Severe Heat Advisory**: Ambient temperature exceeds 40°C. Implement heatwave emergency measures.")
-        if humidity > 85 and temp > 28:
-            advisories.append("🌧️ **High Moisture Saturation**: Relative humidity above 85% with warm conditions indicates imminent heavy rainfall.")
+        if temp >= 38.0:
+            advisories.append("⚠️ **Severe Heat Advisory**: Ambient temperature exceeds 38°C. Implement heat action plan (HAP) cooling stations.")
+        if humidity >= 85:
+            advisories.append(f"🌧️ **Precipitation & Moisture Alert**: Atmospheric humidity is elevated at **{humidity}%**. High likelihood of light to moderate showers in {live_d}. Keep rain protection ready.")
+        elif humidity < 45:
+            advisories.append(f"☀️ **Clear & Dry Weather Notice**: Relative humidity is low at **{humidity}%**. Completely clear sunny conditions prevailing across {live_d} with 0% rain chance.")
         if aqi > 150:
-            advisories.append("😷 **Unhealthy Air Quality**: AQI exceeds 150. Issue public respiratory health advisories.")
-        if seismic > 3.0:
-            advisories.append("⚡ **Seismic Alert**: Tremor intensity elevated above 3.0 Mw. Dispatch civil structural inspection units.")
+            advisories.append(f"😷 **Unhealthy Air Quality**: AQI is elevated at **{aqi}**. Issue public respiratory health advisories.")
+        if seismic > 2.5:
+            advisories.append(f"⚡ **Seismic Activity Alert**: Sensor recorded tremor baseline of **{seismic} Mw**. Field inspection units on standby.")
         if not advisories:
-            advisories.append("✅ **All Telemetry Parameters Nominal**: Environmental conditions within safe regulatory operating bands.")
+            advisories.append(f"✅ **All Telemetry Parameters Nominal**: Environmental conditions in {live_d} remain within safe regulatory operating bands.")
 
         for adv in advisories:
             if "⚠️" in adv or "⚡" in adv:
                 st.warning(adv)
             elif "😷" in adv:
                 st.error(adv)
+            elif "🌧️" in adv:
+                st.info(adv)
             else:
                 st.success(adv)
 

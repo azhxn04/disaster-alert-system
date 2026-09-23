@@ -117,5 +117,23 @@ class TestDisasterPlatform(unittest.TestCase):
         self.assertIn("r2_score", metrics)
         self.assertGreater(metrics["r2_score"], 0.9)
 
+    def test_10_privacy_policy_and_consent(self):
+        """Test DPDP Act 2023 privacy policy delivery and affirmative consent tracking."""
+        policy = security.get_privacy_policy()
+        self.assertIn("title", policy)
+        self.assertIn("DPDP", policy["framework"])
+        self.assertEqual(len(policy["sections"]), 5, "Must contain all 5 statutory policy articles.")
+        self.assertIn("consent_declaration", policy)
+
+        # Test consent recording and retrieval
+        rec_yes = security.record_officer_consent("sess_test_1", "officer_alpha", True)
+        self.assertTrue(rec_yes["consented"])
+        self.assertEqual(rec_yes["status"], "Consent Granted")
+
+        rec_no = security.record_officer_consent("sess_test_2", "officer_beta", False)
+        self.assertFalse(rec_no["consented"])
+        self.assertEqual(rec_no["status"], "Consent Declined")
+
 if __name__ == "__main__":
     unittest.main()
+

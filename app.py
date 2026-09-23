@@ -71,52 +71,152 @@ st.markdown("""
 
 DISTRICT_COORDS = data_engine.DISTRICT_COORDS
 
-# Authentication Session State (Safe Initialization)
+# Authentication & Privacy Consent Session State (Safe Initialization)
 try:
     if "authenticated" not in st.session_state:
         st.session_state["authenticated"] = False
+    if "privacy_consent" not in st.session_state:
+        st.session_state["privacy_consent"] = None  # None: pending decision, True: accepted, False: declined
+    if "active_user" not in st.session_state:
+        st.session_state["active_user"] = None
+    if "active_role" not in st.session_state:
+        st.session_state["active_role"] = None
 except Exception:
     pass
 
-# Login Handler
-is_authenticated = False
-try:
-    is_authenticated = bool(st.session_state.get("authenticated", False))
-except Exception:
-    is_authenticated = False
+is_authenticated = bool(st.session_state.get("authenticated", False))
+has_consent = st.session_state.get("privacy_consent", None)
 
 if not is_authenticated:
-    st.markdown("<br><br>", unsafe_allow_html=True)
-    _, col, _ = st.columns([1, 1.2, 1])
+    st.markdown("<br>", unsafe_allow_html=True)
+    _, col, _ = st.columns([0.6, 2.0, 0.6])
     with col:
-        st.markdown("## 🛡️ Disaster Control Center Login")
-        st.caption("Protected by PBKDF2-HMAC-SHA256 (100k rounds) & AES-256 Fernet Vault")
-        with st.form("login_form"):
-            u = st.text_input("Officer ID", placeholder="admin")
-            p = st.text_input("Password", type="password", placeholder="admin123")
-            if st.form_submit_button("Access Operations Center"):
-                success, _ = security.verify_user(u, p)
-                if success:
-                    st.session_state["authenticated"] = True
-                    st.rerun()
-                else:
-                    st.error("Authentication failed. Use admin / admin123")
-else:
-    # Top Command Header Banner
-    st.markdown("""
-        <div class='command-header'>
-            <div style='display:flex; justify-content:space-between; align-items:center;'>
-                <div>
-                    <h2 style='margin:0; font-weight:700;'>🏛️Resilience AI (State Emergency Command Center)</h2>
-                    <p style='margin:0; opacity:0.85; font-size:14px;'>Maharashtra Disaster Risk Intelligence Hub | PyTorch Deep Learning & Spatial Intelligence</p>
+        # Pre-Login Command Center Brand Header
+        st.markdown("""
+            <div style='background:linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color:#ffffff; padding:22px 24px; border-radius:10px; margin-bottom:18px; text-align:center; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);'>
+                <h2 style='margin:0; font-weight:700; color:#ffffff;'>🛡️ Maharashtra State Emergency Command Center</h2>
+                <p style='margin:6px 0 0 0; opacity:0.85; font-size:13px;'>Secure Access Gateway &bull; Data Security & Privacy (DSP) Vault</p>
+            </div>
+        """, unsafe_allow_html=True)
+
+        policy_data = security.get_privacy_policy()
+
+        # Step 1: Pre-Login Privacy Policy and Consent Notification (Yes / No)
+        if has_consent is not True:
+            consent_card_html = f"""
+            <div style='background:#ffffff; border:1px solid #cbd5e1; border-left:6px solid #2563eb; border-radius:10px; padding:22px; margin-bottom:18px; box-shadow:0 2px 8px rgba(0,0,0,0.04);'>
+                <div style='display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:10px;'>
+                    <span style='background:#eff6ff; color:#1d4ed8; padding:4px 10px; border-radius:12px; font-size:11px; font-weight:800; text-transform:uppercase;'>📋 MANDATORY STATUTORY NOTIFICATION</span>
+                    <span style='font-size:12px; color:#64748b; font-weight:600;'>{policy_data['framework']}</span>
                 </div>
-                <div style='text-align:right;'>
-                    <span style='background:#10b981; color:#ffffff; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:600;'>🟢 SYSTEM ONLINE</span>
-                    <p style='margin:4px 0 0 0; opacity:0.75; font-size:12px;'>Database: disaster_data.db | Vault: ./dsp_vault</p>
+                <h3 style='margin:4px 0 8px 0; color:#0f172a; font-size:18px; font-weight:800;'>{policy_data['title']}</h3>
+                <p style='margin:0 0 12px 0; font-size:13.5px; color:#475569; line-height:1.6;'>
+                    Pursuant to the <b>Digital Personal Data Protection (DPDP) Act 2023</b> and state disaster management regulations, 
+                    access to the Emergency Command Center requires your explicit, affirmative consent. Operational telemetry, 
+                    district hazard intelligence, and officer administrative sessions are processed strictly under zero-knowledge encryption protocols.
+                </p>
+                <div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:12px; font-size:12px; color:#334155; line-height:1.5;'>
+                    <b>Statutory Consent Declaration:</b> {policy_data['consent_declaration']}
                 </div>
             </div>
-        </div>
-    """, unsafe_allow_html=True)
+            """
+            st.markdown(consent_card_html, unsafe_allow_html=True)
+
+            with st.expander("📜 Read Complete Data Security & Privacy Policy (5 Articles)", expanded=False):
+                st.markdown(f"**Governing Framework:** {policy_data['framework']}")
+                st.markdown(f"**Jurisdiction:** {policy_data['jurisdiction']} &bull; **Effective Date:** {policy_data['effective_date']}")
+                st.markdown(f"**Designated State Data Protection Officer (DPO):** `{policy_data['dpo_contact']}`")
+                st.markdown("---")
+                for sec in policy_data["sections"]:
+                    st.markdown(f"##### {sec['num']}")
+                    st.markdown(f"<p style='font-size:13px; color:#334155; line-height:1.55;'>{sec['content']}</p>", unsafe_allow_html=True)
+
+            st.markdown("##### ✍️ Mandatory Consent Decision")
+            st.markdown("<p style='font-size:13px; color:#475569; margin-top:-8px;'>Do you accept the Data Security & Privacy Policy and consent to secure operational telemetry and authenticated session logging?</p>", unsafe_allow_html=True)
+
+            col_yes, col_no = st.columns(2)
+            if col_yes.button("✅ Yes, I Consent & Agree", type="primary", use_container_width=True, key="btn_pre_consent_yes"):
+                st.session_state["privacy_consent"] = True
+                security.record_officer_consent("sess_pre_auth", "pre_auth_officer", True)
+                st.rerun()
+
+            if col_no.button("❌ No, I Decline", use_container_width=True, key="btn_pre_consent_no"):
+                st.session_state["privacy_consent"] = False
+                security.record_officer_consent("sess_pre_auth", "declined_user", False)
+                st.rerun()
+
+            if has_consent is False:
+                st.markdown("<br>", unsafe_allow_html=True)
+                st.error("🚫 **Access Prohibited — Consent Declined**: Access to the Maharashtra State Emergency Command Center is restricted to authorized personnel who have affirmatively agreed to the Data Security & Privacy Policy under the DPDP Act 2023. Authentication cannot proceed without active consent.")
+                if st.button("🔄 Review Policy & Grant Consent", use_container_width=True, key="btn_reconsider_consent"):
+                    st.session_state["privacy_consent"] = None
+                    st.rerun()
+
+        else:
+            # Step 2: Consent is Granted -> Display Verified Badge & Officer Login Form
+            st.markdown("""
+                <div style='background:#f0fdf4; border:1px solid #bbf7d0; border-left:5px solid #16a34a; border-radius:8px; padding:12px 16px; margin-bottom:16px;'>
+                    <div style='display:flex; justify-content:space-between; align-items:center;'>
+                        <span style='color:#15803d; font-weight:700; font-size:13px;'>🟢 Statutory Privacy Policy Accepted & Consent Verified</span>
+                        <span style='color:#166534; font-size:11px; font-weight:600;'>Section 6 DPDP Act 2023 Active</span>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+            with st.form("login_form"):
+                st.markdown("### 🔑 Officer Authentication")
+                st.caption("Protected by PBKDF2-HMAC-SHA256 (100k rounds) & AES-256 Fernet Vault")
+                u = st.text_input("Officer ID", placeholder="admin")
+                p = st.text_input("Password", type="password", placeholder="admin123")
+                submit_login = st.form_submit_button("Access Operations Center", type="primary", use_container_width=True)
+
+                if submit_login:
+                    success, role = security.verify_user(u, p)
+                    if success:
+                        st.session_state["authenticated"] = True
+                        st.session_state["active_user"] = u
+                        st.session_state["active_role"] = role
+                        security.record_officer_consent("active_session", u, True)
+                        st.rerun()
+                    else:
+                        st.error("❌ Authentication failed. Invalid Officer ID or Password (Default: admin / admin123)")
+
+            st.markdown("<div style='text-align:center; margin-top:12px;'>", unsafe_allow_html=True)
+            if st.button("↩️ Revoke Consent / Review Policy", key="btn_revoke_login"):
+                st.session_state["privacy_consent"] = None
+                st.session_state["authenticated"] = False
+                security.record_officer_consent("active_session", "revoked", False)
+                st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
+else:
+    # Top Command Header Banner with Active Officer Badge and Logout Control
+    hdr_col1, hdr_col2 = st.columns([5.2, 0.8])
+    with hdr_col1:
+        officer_label = st.session_state.get('active_user', 'admin')
+        role_label = st.session_state.get('active_role', 'Chief Commander')
+        st.markdown(f"""
+            <div class='command-header'>
+                <div style='display:flex; justify-content:space-between; align-items:center;'>
+                    <div>
+                        <h2 style='margin:0; font-weight:700;'>🏛️Resilience AI (State Emergency Command Center)</h2>
+                        <p style='margin:0; opacity:0.85; font-size:14px;'>Maharashtra Disaster Risk Intelligence and Early Warning Hub | PyTorch Deep Learning & Spatial Intelligence</p>
+                    </div>
+                    <div style='text-align:right;'>
+                        <span style='background:#10b981; color:#ffffff; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:600;'>🟢 SYSTEM ONLINE</span>
+                        <p style='margin:4px 0 0 0; opacity:0.85; font-size:12px;'>Officer: <b>{officer_label}</b> ({role_label}) &bull; DPDP Consent Active</p>
+                    </div>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+    with hdr_col2:
+        st.markdown("<div style='margin-top:22px;'>", unsafe_allow_html=True)
+        if st.button("🚪 Logout", key="btn_logout", use_container_width=True, help="End session and return to pre-login screen"):
+            st.session_state["authenticated"] = False
+            st.session_state["privacy_consent"] = None
+            st.session_state["active_user"] = None
+            st.session_state["active_role"] = None
+            st.rerun()
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # Initialize PyTorch Model and Dataset Engine safely from SQLite
     model, scaler, acc, f1, df_hist = dl_engine.train_dl_model()
@@ -870,8 +970,62 @@ else:
         d1, d2, d3, d4 = st.columns(4)
         d1.metric("Password Hashing", "PBKDF2-SHA256", "100,000 Iterations")
         d2.metric("Vault Cipher", "AES-256", "Fernet (CBC + HMAC)")
-        d3.metric("Salt Entropy", "128-bit CSPRNG", "Unique per account")
-        d4.metric("Vault Status", "Active & Encrypted", "./dsp_vault/credentials.enc")
+        d3.metric("Privacy Standard", "DPDP Act 2023", "Sec 6 & ISO 27001")
+        d4.metric("Active Consent", "Affirmative Opt-In", "🟢 Verified Active")
+
+        st.markdown("---")
+
+        # Statutory Data Privacy Policy & Consent Registry Card
+        policy = security.get_privacy_policy()
+        cur_officer = st.session_state.get("active_user", "admin")
+        cur_role = st.session_state.get("active_role", "Chief Commander")
+
+        privacy_html = f"""<div style='background:#ffffff; border:1px solid #cbd5e1; border-left:6px solid #10b981; border-radius:10px; padding:22px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,0.03);'>
+<div style='display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:10px;'>
+<div>
+<span style='background:#ecfdf5; color:#059669; padding:4px 10px; border-radius:12px; font-size:11px; font-weight:800; text-transform:uppercase;'>🟢 STATUTORY CONSENT RECORD ACTIVE</span>
+<span style='margin-left:8px; font-size:12px; color:#64748b; font-weight:600;'>{policy['framework']}</span>
+</div>
+<span style='font-size:12px; color:#64748b;'>DPO Channel: <code>{policy['dpo_contact']}</code></span>
+</div>
+<h3 style='margin:0 0 8px 0; color:#0f172a; font-size:18px; font-weight:800;'>{policy['title']}</h3>
+<p style='margin:0 0 14px 0; font-size:13.5px; color:#334155; line-height:1.6;'>
+The State Emergency Command Center operates in strict compliance with the <b>Digital Personal Data Protection (DPDP) Act 2023</b>. 
+All meteorological telemetry, district geospatial coordinates, and personnel credential digests are processed under zero-knowledge encryption 
+and immutable auditing protocols. Plaintext passwords never enter persistence.
+</p>
+<div style='display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-top:10px; padding-top:12px; border-top:1px solid #f1f5f9;'>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:10px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>👤 Authenticated Officer</p>
+<h4 style='margin:4px 0 0 0; color:#0f172a; font-weight:700;'>{cur_officer}</h4>
+<span style='font-size:11px; color:#64748b;'>Role: {cur_role}</span>
+</div>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:10px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>⚖️ Legal Basis</p>
+<h4 style='margin:4px 0 0 0; color:#1e40af; font-weight:700;'>Disaster Mgmt Act 2005</h4>
+<span style='font-size:11px; color:#64748b;'>Sec 38 Civil Defense Mandate</span>
+</div>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:10px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>🔐 Cryptographic Standard</p>
+<h4 style='margin:4px 0 0 0; color:#0f766e; font-weight:700;'>AES-256 + PBKDF2</h4>
+<span style='font-size:11px; color:#64748b;'>100,000 Rounds Hashing</span>
+</div>
+<div style='background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:10px;'>
+<p style='margin:0; font-size:11px; color:#64748b; font-weight:600; text-transform:uppercase;'>🛡️ Consent Mechanism</p>
+<h4 style='margin:4px 0 0 0; color:#15803d; font-weight:700;'>Affirmative Opt-In</h4>
+<span style='font-size:11px; color:#64748b;'>Revocable upon session logout</span>
+</div>
+</div>
+</div>"""
+        st.markdown(privacy_html, unsafe_allow_html=True)
+
+        with st.expander("📜 Expand Complete Statutory Data Privacy Policy & Protection Articles (5 Sections)", expanded=False):
+            st.markdown(f"**Jurisdiction:** {policy['jurisdiction']} &bull; **Effective Date:** {policy['effective_date']}")
+            st.markdown(f"**Data Protection Officer (DPO):** `{policy['dpo_contact']}`")
+            st.markdown("---")
+            for sec in policy["sections"]:
+                st.markdown(f"##### {sec['num']}")
+                st.markdown(f"<p style='font-size:13px; color:#334155; line-height:1.55;'>{sec['content']}</p>", unsafe_allow_html=True)
 
         st.markdown("---")
 

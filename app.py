@@ -486,10 +486,16 @@ else:
     # TAB 2: GIS SPATIAL HISTORICAL MAP
     # ----------------------------------------------------
     with tab2:
-        m1, m2, m3 = st.columns([1.2, 1.4, 1.2])
+        m1, m2, m3, m4 = st.columns([1.1, 1.3, 1.1, 0.9])
         m_dis = m1.selectbox("Filter Hazard Event:", all_disasters, key="s2_dis")
         yr_range = m2.slider("Year Horizon:", 2021, 2026, (2022, 2024), key="s2_yr_range")
         m_dist = m3.selectbox("Focus Center Region:", all_districts, index=default_dist_idx, key="s2_dist")
+
+        with m4:
+            st.markdown("<p style='font-size:14px; font-weight:700; color:#1e293b; margin-bottom:8px;'>🗺️ Basemap View:</p>", unsafe_allow_html=True)
+            is_dark_mode = st.toggle("🌙 Dark Mode", value=False, key="s2_map_dark_toggle", help="Toggle between Light Mode (OpenStreetMap) and Dark Mode (Carto DarkMatter) for GIS Hotspot Map")
+            theme_badge = "🌙 Dark Matter" if is_dark_mode else "☀️ Light Street"
+            st.caption(f"Active: **{theme_badge}**")
 
         y_start, y_end = yr_range[0], yr_range[1]
 
@@ -500,18 +506,16 @@ else:
         coords = DISTRICT_COORDS.get(m_dist, (19.75, 75.71))
         center_lat, center_lon = coords[0], coords[1]
 
+        # Map styling parameters based on Dark / Light toggle
+        map_style = "carto-darkmatter" if is_dark_mode else "open-street-map"
+        paper_bg = "#0f172a" if is_dark_mode else "#ffffff"
+        font_col = "#f8fafc" if is_dark_mode else "#0f172a"
+        colorscale = "YlOrRd" if is_dark_mode else "Reds"
+        colorbar_font = dict(color="#f8fafc") if is_dark_mode else dict(color="#0f172a")
+        focus_marker_color = "#38bdf8" if is_dark_mode else "#2563eb"
+
         # ------------------------------------------------------------
-        # Build the bubble map with go.Scattermap (NOT Scattermapbox).
-        #
-        # In Plotly 7.0 / plotly.js 4.0, the classic Mapbox-based trace
-        # types (Scattermapbox / scatter_mapbox / the "mapbox" subplot /
-        # mapboxAccessToken) were REMOVED entirely from both plotly.js
-        # and plotly.py. That's the root cause of the AttributeError.
-        # The replacement is the MapLibre-based "map" family:
-        #   - go.Scattermap   (instead of go.Scattermapbox)
-        #   - layout.map      (instead of layout.mapbox)
-        # No access token is required either way since we use the free
-        # "open-street-map" style.
+        # Build the bubble map with go.Scattermap (MapLibre-based).
         # ------------------------------------------------------------
         fig_map = go.Figure()
 
@@ -543,9 +547,12 @@ else:
                 marker=go.scattermap.Marker(
                     size=sizes,
                     color=loss_vals,
-                    colorscale="Reds",
+                    colorscale=colorscale,
                     showscale=True,
-                    colorbar=dict(title="Loss (₹ Cr)"),
+                    colorbar=dict(
+                        title=dict(text="Loss (₹ Cr)", font=colorbar_font),
+                        tickfont=colorbar_font
+                    ),
                     sizemode="diameter"
                 ),
                 text=map_df["district"],
@@ -564,18 +571,30 @@ else:
 
             fig_map.update_layout(
                 map=dict(
-                    style="open-street-map",
+                    style=map_style,
                     center=dict(lat=center_lat, lon=center_lon),
                     zoom=8.0
                 ),
-                title=f"Incident Hotspots for {m_dis} ({y_start} - {y_end}) | Zoomed on {m_dist}",
+                title=dict(
+                    text=f"Incident Hotspots for {m_dis} ({y_start} - {y_end}) | Zoomed on {m_dist} ({'🌙 Dark Mode' if is_dark_mode else '☀️ Light Mode'})",
+                    font=dict(color=font_col, size=15)
+                ),
+                paper_bgcolor=paper_bg,
+                plot_bgcolor=paper_bg,
+                font=dict(color=font_col),
                 height=520
             )
         else:
             fig_map.update_layout(
-                map=dict(style="open-street-map", center=dict(lat=center_lat, lon=center_lon), zoom=7.5),
-                height=520,
-                title=f"No {m_dis} Incidents Recorded Statewide for {y_start} - {y_end}"
+                map=dict(style=map_style, center=dict(lat=center_lat, lon=center_lon), zoom=7.5),
+                title=dict(
+                    text=f"No {m_dis} Incidents Recorded Statewide for {y_start} - {y_end} ({'🌙 Dark Mode' if is_dark_mode else '☀️ Light Mode'})",
+                    font=dict(color=font_col, size=15)
+                ),
+                paper_bgcolor=paper_bg,
+                plot_bgcolor=paper_bg,
+                font=dict(color=font_col),
+                height=520
             )
 
         # Visually highlight the focused center district with a distinctive marker
@@ -585,18 +604,19 @@ else:
             mode='markers+text',
             marker=go.scattermap.Marker(
                 size=28,
-                color='#2563eb',
-                opacity=0.9
+                color=focus_marker_color,
+                opacity=0.95
             ),
             text=[f"🎯 FOCUS: {m_dist}"],
             textposition="top right",
+            textfont=dict(color=font_col, size=12),
             name=f"Focused: {m_dist}",
             hoverinfo="text"
         ))
 
         fig_map.update_layout(
             margin={"r": 0, "t": 40, "l": 0, "b": 0},
-            legend=dict(yanchor="top", y=0.98, xanchor="left", x=0.02)
+            legend=dict(yanchor="top", y=0.98, xanchor="left", x=0.02, font=dict(color=font_col))
         )
         st.plotly_chart(fig_map, use_container_width=True)
 

@@ -223,12 +223,13 @@ else:
     all_districts = sorted(list(DISTRICT_COORDS.keys()))
     all_disasters = sorted(df_hist['disaster_type'].unique()) if (df_hist is not None and 'disaster_type' in df_hist.columns and not df_hist.empty) else ["Cyclone", "Drought", "Earthquake", "Excessive Rainfall", "Flood", "Heatwave"]
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
         "🔮 Dynamic Risk Analytics",
         "🗺️ GIS Historical Map",
         "📡 Live Telemetry",
         "📄 Government Directives",
-        "🔐 Data Security & Privacy (DSP)"
+        "🔐 Data Security & Privacy (DSP)",
+        "🦺 Safety Measures"
     ])
 
     # ----------------------------------------------------
@@ -1111,3 +1112,345 @@ and immutable auditing protocols. Plaintext passwords never enter persistence.
         officers_list = security.list_vault_officers()
         df_officers = pd.DataFrame(officers_list)
         st.dataframe(df_officers, use_container_width=True)
+
+    # ----------------------------------------------------
+    # TAB 6: SAFETY MEASURES & CITIZEN DISASTER GUIDE
+    # ----------------------------------------------------
+    with tab6:
+        st.markdown("### 🦺 Citizen Safety Measures & Emergency Action Protocols")
+        st.caption("Standard Operating Procedures (SOPs) & Life-Saving Action Guides for Individuals and Families during Natural Disasters")
+
+        # Emergency Hotline Quick Access Strip
+        st.markdown("""
+            <div style='background:linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color:#ffffff; border-radius:10px; padding:18px 20px; margin-bottom:20px;'>
+                <div style='display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;'>
+                    <div>
+                        <span style='background:#ef4444; color:#ffffff; padding:4px 10px; border-radius:12px; font-size:11px; font-weight:800; text-transform:uppercase;'>🚨 24/7 TOLL-FREE EMERGENCY SOS</span>
+                        <h4 style='margin:6px 0 0 0; color:#ffffff; font-size:17px;'>Maharashtra Emergency Disaster Hotlines</h4>
+                    </div>
+                    <div style='display:flex; gap:14px; flex-wrap:wrap; font-size:13px;'>
+                        <div style='background:rgba(255,255,255,0.08); padding:8px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.15);'>
+                            <span style='color:#94a3b8; font-size:11px; display:block;'>NATIONAL SOS</span>
+                            <b style='color:#f87171; font-size:16px;'>📞 112</b>
+                        </div>
+                        <div style='background:rgba(255,255,255,0.08); padding:8px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.15);'>
+                            <span style='color:#94a3b8; font-size:11px; display:block;'>NDRF CONTROL</span>
+                            <b style='color:#60a5fa; font-size:16px;'>📞 1078</b>
+                        </div>
+                        <div style='background:rgba(255,255,255,0.08); padding:8px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.15);'>
+                            <span style='color:#94a3b8; font-size:11px; display:block;'>STATE DISASTER (SEOC)</span>
+                            <b style='color:#34d399; font-size:16px;'>📞 1070</b>
+                        </div>
+                        <div style='background:rgba(255,255,255,0.08); padding:8px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.15);'>
+                            <span style='color:#94a3b8; font-size:11px; display:block;'>AMBULANCE (MEDICAL)</span>
+                            <b style='color:#facc15; font-size:16px;'>📞 108</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
+
+        # 1. IMD Alert Warnings Guide
+        st.markdown("#### 🚨 IMD Weather Alerts: How Individuals Must React")
+        st.caption("Official public response protocols based on IMD meteorological color warning stages")
+
+        alert_col1, alert_col2, alert_col3, alert_col4 = st.columns(4)
+        with alert_col1:
+            st.markdown("""
+                <div style='background:#fef2f2; border:1px solid #fecaca; border-top:5px solid #dc2626; border-radius:8px; padding:14px; min-height:240px;'>
+                    <span style='background:#dc2626; color:#ffffff; padding:3px 8px; border-radius:10px; font-size:11px; font-weight:800;'>🔴 RED ALERT</span>
+                    <h4 style='color:#991b1b; margin:8px 0 6px 0; font-size:15px;'>Take Action / Extreme Danger</h4>
+                    <p style='font-size:12.5px; color:#450a0a; line-height:1.5; margin-bottom:8px;'>
+                        <b>Extreme Threat:</b> Deluge, flash flood, cyclonic gale, or lethal heatwave.
+                    </p>
+                    <ul style='font-size:12px; color:#7f1d1d; padding-left:16px; margin:0; line-height:1.5;'>
+                        <li><b>STAY IN HOUSE:</b> Do not venture out under any circumstance.</li>
+                        <li>Cancel all road commutes, office work, and school trips.</li>
+                        <li>Move family to upper floors or safest interior room.</li>
+                        <li>Keep battery torches & charged phones ready.</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
+        with alert_col2:
+            st.markdown("""
+                <div style='background:#fffbeb; border:1px solid #fde68a; border-top:5px solid #f59e0b; border-radius:8px; padding:14px; min-height:240px;'>
+                    <span style='background:#f59e0b; color:#ffffff; padding:3px 8px; border-radius:10px; font-size:11px; font-weight:800;'>🟠 ORANGE ALERT</span>
+                    <h4 style='color:#92400e; margin:8px 0 6px 0; font-size:15px;'>Be Prepared / High Risk</h4>
+                    <p style='font-size:12.5px; color:#78350f; line-height:1.5; margin-bottom:8px;'>
+                        <b>Heavy Weather Disruption:</b> Intense downpours or rising river levels.
+                    </p>
+                    <ul style='font-size:12px; color:#78350f; padding-left:16px; margin:0; line-height:1.5;'>
+                        <li><b>Avoid non-essential outdoor travel.</b></li>
+                        <li>If stepping out briefly, <b>always carry a sturdy umbrella</b> or raincoat.</li>
+                        <li>Wear slip-resistant waterproof footwear.</li>
+                        <li>Avoid parking vehicles under old trees or billboards.</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
+        with alert_col3:
+            st.markdown("""
+                <div style='background:#fefce8; border:1px solid #fef08a; border-top:5px solid #eab308; border-radius:8px; padding:14px; min-height:240px;'>
+                    <span style='background:#ca8a04; color:#ffffff; padding:3px 8px; border-radius:10px; font-size:11px; font-weight:800;'>🟡 YELLOW ALERT</span>
+                    <h4 style='color:#854d0e; margin:8px 0 6px 0; font-size:15px;'>Be Aware / Watchful</h4>
+                    <p style='font-size:12.5px; color:#713f12; line-height:1.5; margin-bottom:8px;'>
+                        <b>Moderate Hazard:</b> Intermittent monsoon showers or gusty winds.
+                    </p>
+                    <ul style='font-size:12px; color:#713f12; padding-left:16px; margin:0; line-height:1.5;'>
+                        <li><b>Carry an umbrella or rain gear</b> when heading outside.</li>
+                        <li>Check local waterlogged routes before commuting.</li>
+                        <li>Drive cautiously with headlights on in drizzle.</li>
+                        <li>Stay alert to sudden localized cloudbursts.</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
+        with alert_col4:
+            st.markdown("""
+                <div style='background:#f0fdf4; border:1px solid #bbf7d0; border-top:5px solid #16a34a; border-radius:8px; padding:14px; min-height:240px;'>
+                    <span style='background:#16a34a; color:#ffffff; padding:3px 8px; border-radius:10px; font-size:11px; font-weight:800;'>🟢 GREEN ALERT</span>
+                    <h4 style='color:#166534; margin:8px 0 6px 0; font-size:15px;'>Normal / Safe Conditions</h4>
+                    <p style='font-size:12.5px; color:#14532d; line-height:1.5; margin-bottom:8px;'>
+                        <b>Nominal Weather:</b> No warning issued; fair atmospheric regime.
+                    </p>
+                    <ul style='font-size:12px; color:#14532d; padding-left:16px; margin:0; line-height:1.5;'>
+                        <li>All normal civic and outdoor activities safe.</li>
+                        <li>Inspect domestic drain lines and rooftop gutters.</li>
+                        <li>Verify emergency go-bag supplies.</li>
+                        <li>Follow regular municipal bulletins.</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("---")
+
+        # 2. Hazard Specific Response Guides
+        st.markdown("#### 📖 Natural Hazard Emergency Guides: Step-by-Step Response")
+        st.caption("Concrete survival rules tailored for individual citizen safety across Maharashtra's primary hazard profiles")
+
+        h_choice = st.selectbox(
+            "Select Hazard Guide to Inspect:",
+            [
+                "🌊 Flood & Waterlogging (Chances of Flood - Stay In)",
+                "🏚️ Earthquake (Drop, Cover & Hold Under Table)",
+                "🌀 Cyclone & Gale Force Storms",
+                "🔥 Heatwave & Extreme Daytime Sun",
+                "⚡ Thunderstorm, Gale & Cloud-to-Ground Lightning",
+                "☀️ Drought & Water Scarcity"
+            ],
+            key="safety_hazard_select"
+        )
+
+        if "Flood" in h_choice:
+            st.markdown("""
+                <div style='background:#f0f9ff; border:1px solid #bae6fd; border-left:6px solid #0284c7; border-radius:10px; padding:20px; margin-bottom:16px;'>
+                    <h3 style='margin:0 0 10px 0; color:#0369a1;'>🌊 Flood Emergency Response: "If Chances of Flood, Do Not Go Out"</h3>
+                    <p style='font-size:14px; color:#334155; line-height:1.6;'>
+                        Floods and flash inundation are the most frequent natural disasters across Maharashtra's river basins and coastal cities.
+                    </p>
+                    <div style='display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;'>
+                        <div style='background:#ffffff; border:1px solid #e0f2fe; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#0369a1; margin:0 0 8px 0;'>✅ WHAT YOU MUST DO (DOs)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>Stay indoors:</b> If there are chances of flood, stay inside your house on upper floors.</li>
+                                <li><b>Turn off utilities:</b> Immediately shut off main electrical breaker and LPG gas cylinder if water enters the house.</li>
+                                <li><b>Boil drinking water:</b> Water supply gets contaminated in floods; boil water for at least 10 minutes.</li>
+                                <li><b>Keep an emergency kit ready:</b> Keep torches, medicines, dry snacks, and battery bank in a waterproof bag.</li>
+                                <li><b>Evacuate early:</b> If NDRF or district authorities advise evacuation, leave immediately along marked high ground.</li>
+                            </ul>
+                        </div>
+                        <div style='background:#ffffff; border:1px solid #fee2e2; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#b91c1c; margin:0 0 8px 0;'>❌ WHAT YOU MUST NEVER DO (DON'Ts)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>DO NOT WALK THROUGH MOVING WATER:</b> Just 15 cm of moving water can sweep an adult off their feet.</li>
+                                <li><b>NEVER DRIVE THROUGH FLOODED ROADS:</b> Most flood deaths occur inside submerged cars ("Turn Around, Don't Drown").</li>
+                                <li><b>Avoid open drainage & manholes:</b> Submerged open drains and underpasses pose mortal drowning risks.</li>
+                                <li><b>Do not touch fallen electric wires:</b> Submerged poles and fallen live wires cause instant electrocution.</li>
+                                <li><b>Do not consume spoiled food:</b> Discard any food that has come into contact with floodwater.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+        elif "Earthquake" in h_choice:
+            st.markdown("""
+                <div style='background:#fdf2f8; border:1px solid #fbcfe8; border-left:6px solid #db2777; border-radius:10px; padding:20px; margin-bottom:16px;'>
+                    <h3 style='margin:0 0 10px 0; color:#be185d;'>🏚️ Earthquake Response: "Drop, Cover, and Hold Inside / Under Table"</h3>
+                    <p style='font-size:14px; color:#334155; line-height:1.6;'>
+                        Earthquakes strike with zero notice. Instant instinctive action saves lives during tremors.
+                    </p>
+                    <div style='display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;'>
+                        <div style='background:#ffffff; border:1px solid #fce7f3; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#be185d; margin:0 0 8px 0;'>✅ WHAT YOU MUST DO (DOs)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>DROP, COVER, AND HOLD ON:</b> Drop to your hands and knees immediately. Take cover under a <b>sturdy wooden desk or table</b>. Hold on firmly until shaking stops.</li>
+                                <li><b>Protect head and neck:</b> If no table is available, crouch against an interior wall away from windows and cover head with arms or pillow.</li>
+                                <li><b>If in bed:</b> Stay in bed, curl up, and protect your head with a thick pillow.</li>
+                                <li><b>If outdoors:</b> Move quickly into an open field away from tall concrete buildings, electric wires, and bridges.</li>
+                                <li><b>If driving:</b> Pull over safely away from flyovers and utility poles, stay inside vehicle until shaking ceases.</li>
+                            </ul>
+                        </div>
+                        <div style='background:#ffffff; border:1px solid #fee2e2; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#b91c1c; margin:0 0 8px 0;'>❌ WHAT YOU MUST NEVER DO (DON'Ts)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>DO NOT RUN OUTSIDE DURING SHAKING:</b> Falling architectural bricks, glass, and parapets kill more people than building collapses.</li>
+                                <li><b>NEVER USE ELEVATORS:</b> Lifts will lose power and trap occupants; use exterior fire exit stairs once tremors subside.</li>
+                                <li><b>Stay away from glass windows & mirrors:</b> High-velocity shattering glass causes fatal injuries.</li>
+                                <li><b>Do not light matches or candles:</b> Gas lines often rupture; open flames cause instant explosions.</li>
+                                <li><b>Avoid door frames:</b> Modern interior doors are rarely reinforced; hiding under a sturdy table is far safer.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+        elif "Cyclone" in h_choice:
+            st.markdown("""
+                <div style='background:#eff6ff; border:1px solid #bfdbfe; border-left:6px solid #2563eb; border-radius:10px; padding:20px; margin-bottom:16px;'>
+                    <h3 style='margin:0 0 10px 0; color:#1d4ed8;'>🌀 Cyclone & Severe Coastal Gale Guide</h3>
+                    <p style='font-size:14px; color:#334155; line-height:1.6;'>
+                        Coastal Maharashtra districts face severe cyclonic gales from the Arabian Sea.
+                    </p>
+                    <div style='display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;'>
+                        <div style='background:#ffffff; border:1px solid #dbeafe; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#1d4ed8; margin:0 0 8px 0;'>✅ WHAT YOU MUST DO (DOs)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>Secure loose rooftop items:</b> Tie down solar panels, tin sheets, and potted plants that turn into missiles in 100+ km/h winds.</li>
+                                <li><b>Gather in an internal safe room:</b> Stay in an interior room with no exterior glass windows.</li>
+                                <li><b>Charge essential devices:</b> Grid power will be pre-emptively shut off; charge phones and battery lanterns beforehand.</li>
+                                <li><b>Stock 3 days of water & food:</b> Store clean drinking water in sealed containers.</li>
+                            </ul>
+                        </div>
+                        <div style='background:#ffffff; border:1px solid #fee2e2; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#b91c1c; margin:0 0 8px 0;'>❌ WHAT YOU MUST NEVER DO (DON'Ts)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>DO NOT STEP OUT IN THE 'EYE' OF THE STORM:</b> If wind abruptly stops, the calm eye is passing; fierce counter-winds will strike violently within minutes.</li>
+                                <li><b>Never go near sea beaches:</b> Storm surges can cause sudden 4-6 meter tidal waves.</li>
+                                <li><b>Do not spread unverified rumors:</b> Rely only on official SDMA and District Collectorate broadcasts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+        elif "Heatwave" in h_choice:
+            st.markdown("""
+                <div style='background:#fff7ed; border:1px solid #ffedd5; border-left:6px solid #ea580c; border-radius:10px; padding:20px; margin-bottom:16px;'>
+                    <h3 style='margin:0 0 10px 0; color:#c2410c;'>🔥 Heatwave Action: Thermal Protection & Hydration Guide</h3>
+                    <p style='font-size:14px; color:#334155; line-height:1.6;'>
+                        Inland regions (Vidarbha, Marathwada, Khandesh) experience extreme summer temperatures exceeding 45°C.
+                    </p>
+                    <div style='display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;'>
+                        <div style='background:#ffffff; border:1px solid #fed7aa; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#c2410c; margin:0 0 8px 0;'>✅ WHAT YOU MUST DO (DOs)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>Hydrate relentlessly:</b> Drink water, ORS, buttermilk, kokum sherbet, or lemon water regularly, even when not thirsty.</li>
+                                <li><b>Cover your head:</b> When stepping out, always carry an umbrella, wide hat, or damp cotton gamcha/cloth.</li>
+                                <li><b>Wear loose cotton:</b> Light-colored, breathable fabrics promote sweat evaporation and prevent heat exhaustion.</li>
+                                <li><b>Cool down immediately:</b> If dizzy, rest in shade, apply wet cloths on neck and forehead, and sip salted water.</li>
+                            </ul>
+                        </div>
+                        <div style='background:#ffffff; border:1px solid #fee2e2; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#b91c1c; margin:0 0 8px 0;'>❌ WHAT YOU MUST NEVER DO (DON'Ts)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>DO NOT GO OUT DURING PEAK SUN (12 PM - 4 PM):</b> Direct solar irradiance triggers rapid heatstroke.</li>
+                                <li><b>NEVER LEAVE CHILDREN OR PETS IN PARKED CARS:</b> Cabin temperatures can exceed 60°C within 10 minutes.</li>
+                                <li><b>Avoid alcohol, carbonated drinks & high caffeine:</b> These accelerate severe bodily dehydration.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+        elif "Thunderstorm" in h_choice:
+            st.markdown("""
+                <div style='background:#faf5ff; border:1px solid #f3e8ff; border-left:6px solid #9333ea; border-radius:10px; padding:20px; margin-bottom:16px;'>
+                    <h3 style='margin:0 0 10px 0; color:#7e22ce;'>⚡ Lightning & Severe Thunderstorm Safety Protocol</h3>
+                    <p style='font-size:14px; color:#334155; line-height:1.6;'>
+                        Lightning causes the highest rural weather fatalities in Maharashtra during pre-monsoon and post-monsoon thunderstorms.
+                    </p>
+                    <div style='display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;'>
+                        <div style='background:#ffffff; border:1px solid #e9d5ff; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#7e22ce; margin:0 0 8px 0;'>✅ WHAT YOU MUST DO (DOs)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>The 30-30 Rule:</b> If time from flash to thunder is less than 30 seconds, seek substantial indoor shelter immediately.</li>
+                                <li><b>Stay inside enclosed buildings:</b> Concrete houses with closed windows offer complete Faraday-cage protection.</li>
+                                <li><b>The Lightning Squat:</b> If caught in an open field, crouch low on balls of feet, tuck head in, hands on ears. Minimize ground contact.</li>
+                                <li><b>Unplug corded appliances:</b> Power surges from nearby strikes can travel through electrical cables.</li>
+                            </ul>
+                        </div>
+                        <div style='background:#ffffff; border:1px solid #fee2e2; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#b91c1c; margin:0 0 8px 0;'>❌ WHAT YOU MUST NEVER DO (DON'Ts)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>NEVER SHELTER UNDER AN ISOLATED TALL TREE:</b> Lightning seeks highest points; trees act as deadly electrical conductors.</li>
+                                <li><b>Do not touch metal fences, poles, or farm machinery:</b> Metal conducts strikes across hundreds of meters.</li>
+                                <li><b>NEVER LIE FLAT ON THE GROUND:</b> Ground currents travel through soil; lying flat maximizes lethal contact area.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+        else:
+            st.markdown("""
+                <div style='background:#fefce8; border:1px solid #fef08a; border-left:6px solid #ca8a04; border-radius:10px; padding:20px; margin-bottom:16px;'>
+                    <h3 style='margin:0 0 10px 0; color:#a16207;'>☀️ Drought & Rural Water Scarcity Action Guide</h3>
+                    <p style='font-size:14px; color:#334155; line-height:1.6;'>
+                        Drought conditions in Marathwada and Western Maharashtra require disciplined water stewardship and community health monitoring.
+                    </p>
+                    <div style='display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;'>
+                        <div style='background:#ffffff; border:1px solid #fef08a; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#a16207; margin:0 0 8px 0;'>✅ WHAT YOU MUST DO (DOs)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>Conserve drinking water:</b> Prioritize potable water strictly for consumption, cooking, and essential livestock needs.</li>
+                                <li><b>Disinfect storage containers:</b> Treat stored water with chlorine drops or boil before drinking to prevent cholera.</li>
+                                <li><b>Recycle domestic greywater:</b> Use kitchen wastewater for plants and toilet sanitation.</li>
+                                <li><b>Adopt drip irrigation:</b> Farmers should switch to micro-irrigation systems subsidized under state schemes.</li>
+                            </ul>
+                        </div>
+                        <div style='background:#ffffff; border:1px solid #fee2e2; border-radius:8px; padding:14px;'>
+                            <h4 style='color:#b91c1c; margin:0 0 8px 0;'>❌ WHAT YOU MUST NEVER DO (DON'Ts)</h4>
+                            <ul style='font-size:13px; color:#1e293b; line-height:1.6; margin:0; padding-left:18px;'>
+                                <li><b>Do not wash vehicles or driveways with potable water hoses.</b></li>
+                                <li><b>Do not drink untreated borewell water without filtration:</b> Dropping water tables concentrate fluorides and heavy salts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("---")
+
+        # 3. Interactive 72-Hour Citizen Emergency Survival Go-Bag
+        st.markdown("#### 🎒 Interactive 72-Hour Citizen Emergency 'Go-Bag' Checklist")
+        st.caption("Check off items in your household emergency grab-and-go kit to evaluate your disaster readiness score")
+
+        chk_col1, chk_col2 = st.columns(2)
+        with chk_col1:
+            i1 = st.checkbox("💧 3-Day Water Supply (3 Liters per person per day)", value=True, key="chk_water")
+            i2 = st.checkbox("🍞 Non-perishable Dry Food (Biscuits, dry fruit, energy bars)", value=True, key="chk_food")
+            i3 = st.checkbox("🩹 First Aid Kit (Antiseptic, bandages, ORS, daily prescription meds)", value=True, key="chk_meds")
+            i4 = st.checkbox("🔦 High-beam LED Torch with extra alkaline batteries", value=True, key="chk_torch")
+            i5 = st.checkbox("🔋 Charged 10,000+ mAh Power Bank & charging cables", value=False, key="chk_pbank")
+
+        with chk_col2:
+            i6 = st.checkbox("🗂️ Waterproof Bag with IDs (Aadhaar, Voter ID, Insurance, Property papers)", value=False, key="chk_docs")
+            i7 = st.checkbox("☂️ Rain Protection (Foldable umbrella or heavy-duty raincoat)", value=True, key="chk_umbrella")
+            i8 = st.checkbox("📢 Loud Emergency Whistle (To signal rescue teams in debris)", value=False, key="chk_whistle")
+            i9 = st.checkbox("😷 N95 Masks, hand sanitizer & basic hygiene wipes", value=False, key="chk_hygiene")
+            i10 = st.checkbox("💵 Emergency Cash in small rupee notes (₹100, ₹200)", value=False, key="chk_cash")
+
+        checked_count = sum([i1, i2, i3, i4, i5, i6, i7, i8, i9, i10])
+        score_pct = int((checked_count / 10) * 100)
+
+        st.markdown(f"**Household Preparedness Level: {score_pct}% ({checked_count}/10 Items Ready)**")
+        st.progress(score_pct / 100.0)
+
+        if score_pct >= 80:
+            st.success("🟢 **High Emergency Readiness**: Your household has a comprehensive emergency grab-and-go kit prepared!")
+        elif score_pct >= 50:
+            st.warning("🟡 **Moderate Readiness**: Critical items missing (e.g. power bank, ID waterproof pouch, or emergency whistle). Please complete your kit.")
+        else:
+            st.error("🔴 **Low Readiness**: Your household is vulnerable during rapid natural hazards. Please assemble the essential survival kit immediately.")

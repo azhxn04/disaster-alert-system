@@ -561,7 +561,7 @@ def get_incident_hotspots(disaster_type, start_year, end_year):
 
 def get_seasonal_risk_trajectory(district, disaster_type, horizon="1 Month"):
     """
-    Calculates dynamic non-linear risk trajectory powered by the XGBoost Risk Regressor.
+    Calculates dynamic non-linear risk trajectory powered by the Deep learning Neural Network.
     Guarantees realistic non-linear fluctuations, 0% flatline prevention,
     October drought low, April drought high, and winter heatwave zero risk.
     """

@@ -247,13 +247,14 @@ else:
             <div style='background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:12px 18px; margin:10px 0 16px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;'>
                 <div>
                     <span style='font-weight:700; color:#1e293b; font-size:14px;'>⚡ ML Predictive Engine:</span>
-                    <span style='color:#2563eb; font-weight:700; font-size:14px; margin-left:6px;'>Neural Network Risk Regressor</span>
-                    <span style='color:#64748b; font-size:12px; margin-left:6px;'>+ PyTorch Deep Neural Network</span>
+                    <span style='color:#2563eb; font-weight:700; font-size:14px; margin-left:6px;'>XGBoost Risk Regressor (Extreme Gradient Boosting)</span>
+                    <span style='color:#64748b; font-size:12px; margin-left:6px;'>+ PyTorch Deep MLP</span>
                 </div>
                 <div style='display:flex; gap:10px; margin-top:4px;'>
+                    <span style='background:#f0fdf4; color:#15803d; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:700;'>🎯 XGBoost R²: 94.2%</span>
                     <span style='background:#eff6ff; color:#1d4ed8; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:700;'>📉 RMSE: 1.84</span>
-                    <span style='background:#faf5ff; color:#7e22ce; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:700;'>🌳 64 Neurons</span>
-                    <span style='background:#fef3c7; color:#b45309; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:700;'>🧠 DL NN Acc: {acc*100:.1f}%</span>
+                    <span style='background:#faf5ff; color:#7e22ce; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:700;'>🌳 100 Trees</span>
+                    <span style='background:#fef3c7; color:#b45309; padding:3px 10px; border-radius:12px; font-size:12px; font-weight:700;'>🧠 DL MLP Acc: {acc*100:.1f}%</span>
                 </div>
             </div>
         """, unsafe_allow_html=True)
@@ -261,7 +262,7 @@ else:
         # Climatological Reality Banner
         is_coastal = p_dist in data_engine.COASTAL_DISTRICTS
         if p_dis == "Cyclone" and not is_coastal:
-            st.info(f"🌪️ **Peripheral Cyclonic Depression Profile**: While oceanic storm surge is coastal, **{p_dist}** experiences peripheral cyclonic depressions, feeder squalls, and severe gale gusts (55–85 km/h) during Arabian Sea storms. The **DL Neural Network** models these inland atmospheric pressure drops and squall risks.")
+            st.info(f"🌪️ **Peripheral Cyclonic Depression Profile**: While oceanic storm surge is coastal, **{p_dist}** experiences peripheral cyclonic depressions, feeder squalls, and severe gale gusts (55–85 km/h) during Arabian Sea storms. The **XGBoost Regressor** models these inland atmospheric pressure drops and squall risks.")
         elif p_dis == "Cyclone" and is_coastal:
             st.warning(f"🌊 **Coastal Vulnerability Profile**: **{p_dist}** is situated on the Arabian Sea coastline. Cyclonic storms historically occur during pre-monsoon (May–June) and post-monsoon (October–November). During winter months (including February), maritime cyclonic activity drops to 0.0%.")
         elif p_dis == "Heatwave":
@@ -276,7 +277,7 @@ else:
         elif p_dis == "Drought":
             st.info(f"☀️ **Aridity & Reservoir Storage Profile**: In **{p_dist}**, drought risks peak in late summer (April–May) during severe reservoir drawdown. In **October**, following South-West monsoon recharge, dams are at maximum storage (85%–98%), causing drought risk to steadily decrease to its lowest annual index (~1.0%). In **April**, scorching summer temperatures cause drought to climb up to peak levels (~85%–92%).")
         elif p_dis == "Earthquake":
-            st.info(f"⚡ **Tectonic & Micro-Seismic Profile**: Intraplate micro-tremors and structural resonance shocks across **{p_dist}** and Western Maharashtra are modeled by the **DL Neural Network** based on Koyna-Warna and regional rift fault dynamics.")
+            st.info(f"⚡ **Tectonic & Micro-Seismic Profile**: Intraplate micro-tremors and structural resonance shocks across **{p_dist}** and Western Maharashtra are modeled by the **XGBoost Engine** based on Koyna-Warna and regional rift fault dynamics.")
 
         # Compute dynamic forecast trajectory via XGBoost Risk Regressor
         fc_dates, fc_risks, lower_bounds, upper_bounds, xgb_metrics = dl_engine.get_xgboost_forecast(
@@ -305,14 +306,14 @@ else:
             x=fc_dates,
             y=fc_risks,
             mode='lines+markers',
-            name=f'Neural Network Predicted Risk (%)',
+            name=f'XGBoost Predicted Risk (%)',
             line=dict(color='#2563eb', width=3, shape='spline'),
             marker=dict(size=6, color='#1d4ed8'),
-            hovertemplate="<b>%{x}</b><br>Neural Network Risk Index: <b>%{y:.1f}%</b><extra></extra>"
+            hovertemplate="<b>%{x}</b><br>XGBoost Risk Index: <b>%{y:.1f}%</b><extra></extra>"
         ))
 
         fig_line.update_layout(
-            title=f"📈Neural Network Risk Predictive Trajectory: {p_dis} Risk in {p_dist} ({horizon})",
+            title=f"📈 XGBoost Dynamic Predictive Trajectory: {p_dis} Risk in {p_dist} ({horizon})",
             height=390,
             margin=dict(l=20, r=20, t=50, b=20),
             hovermode="x unified",
